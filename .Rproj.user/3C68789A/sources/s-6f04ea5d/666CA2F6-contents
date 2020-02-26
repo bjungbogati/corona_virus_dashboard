@@ -1,0 +1,65 @@
+Volunteering {data-navmenu="Programs"}
+===================================== 
+
+Row
+-----------------------------------------------------------------------
+
+### Number of Beneficiaries 
+
+```{r}
+valueBox(sum_vin_beneficiary, icon = "fa-plus-circle", color = "green")
+```
+
+### Number of Volunteers
+
+```{r}
+valueBox(sum_volunteers, icon = "fa-flag", color ="#f77f00")
+```
+
+### Volunteers country
+
+```{r}
+valueBox(36,icon = "fa-check-square", color = "red")
+```
+
+
+Row {.tabset .tabset-fade data-height=500}
+-----------------------------------------------------------------------   
+
+### Yearly Volunteers 
+```{r}
+yearly_hc
+```
+
+### Gender of Volunteers
+
+```{r}
+vin_gender_2018 <- read_sheet("11BYUaE0NkXHrO28h89KJhowLRL3sZ1uJc-J9Z-KyM_U") %>% clean_names()
+highchart() %>%
+  hc_add_series(vin_gender_2018, "pie", hcaes(name = gender, y = total), name = "gender")%>% hc_colors(colorset)%>%
+  hc_title(text="Gender Division of Volunteers 2018")%>%hc_add_theme(hc_theme_google())
+```
+
+### Project Division of Volunteers
+
+```{r}
+vin_program_percent <- read_sheet("1pcU8IDELEcxCo3Z3BkEG_qj4xjDaYLWNxY9blTyX8IQ") %>% clean_names()
+
+highchart() %>%
+  hc_add_series(vin_program_percent, "pie", hcaes(name = project, y = percentage), name = "project volunteer %") %>% hc_colors(colorset)%>%
+  hc_title(text=" Division of Volunteers based on Project 2018") %>% hc_add_theme(hc_theme_google())
+```
+
+
+### Volunteers country
+
+```{r}
+country_2018_map
+```
+
+### Volunteers and Continents
+
+```{r}
+continent_2018_map
+```
+

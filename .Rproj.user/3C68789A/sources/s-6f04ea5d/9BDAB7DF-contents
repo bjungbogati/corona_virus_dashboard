@@ -1,0 +1,34 @@
+Women Empowerment {data-navmenu="Programs"}
+===================================== 
+
+Row
+-----------------------------------------------------------------------
+
+### Number of Beneficiaries 
+
+```{r}
+valueBox(we_benefits, icon = "fa-plus-circle", color = "green")
+```
+
+### Number of Activities
+
+```{r}
+valueBox(we_activity, icon = "fa-pencil", color = "#f77f00")
+```
+   
+Row {data-width=500 data-height=500}
+-----------------------------------------------------------------------
+
+### Women Empowerment Project 2018
+
+
+```{r}
+project_plot(wm_beneficiary, charttype = "bar", 
+              "Total Beneficiary from Women Empowerment Program")
+```
+
+### Women Empowerment Beneficiary by Project 
+
+```{r}
+top_beneficiary_plot(head(top_wm_beneficiary), charttype = "pie", plot_title ="Top 6 Activities based on Beneficiary")
+```

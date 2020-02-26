@@ -1,0 +1,93 @@
+"0","knitr::opts_chunk$set(warning = FALSE, message = FALSE)"
+"0",""
+"0","source(""assets/utils.R"")"
+"2","Parsed with column specification:
+cols(
+  .default = col_double(),
+  `Province/State` = [31mcol_character()[39m,
+  `Country/Region` = [31mcol_character()[39m
+)
+"
+"2","See spec(...) for full column specifications.
+"
+"2","Parsed with column specification:
+cols(
+  .default = col_double(),
+  `Province/State` = [31mcol_character()[39m,
+  `Country/Region` = [31mcol_character()[39m
+)
+"
+"2","See spec(...) for full column specifications.
+"
+"2","Parsed with column specification:
+cols(
+  .default = col_double(),
+  `Province/State` = [31mcol_character()[39m,
+  `Country/Region` = [31mcol_character()[39m
+)
+"
+"2","See spec(...) for full column specifications.
+"
+"1","83118749106"
+"1"," "
+"1",": "
+"1"," "
+"1","2"
+"1","
+"
+"1","61672356371"
+"1"," "
+"1",": "
+"1"," "
+"1","2.771015"
+"1","
+"
+"1","54444982419"
+"1"," "
+"1",": "
+"1"," "
+"1","2.861084"
+"1","
+"
+"1","42019563304"
+"1"," "
+"1",": "
+"1"," "
+"1","2.982915"
+"1","
+"
+"1","25820731053"
+"1"," "
+"1",": "
+"1"," "
+"1","3.117066"
+"1","
+"
+"1","14242081258"
+"1"," "
+"1",": "
+"1"," "
+"1","3.230683"
+"1","
+"
+"1","12366414803"
+"1"," "
+"1",": "
+"1"," "
+"1","3.288301"
+"1","
+"
+"1","12337238774"
+"1"," "
+"1",": "
+"1"," "
+"1","3.282461"
+"1","
+"
+"1","12337238256"
+"1"," "
+"1",": "
+"1"," "
+"1","3.282486"
+"1","
+"

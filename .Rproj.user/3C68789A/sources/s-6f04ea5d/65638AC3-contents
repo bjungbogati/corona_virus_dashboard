@@ -1,0 +1,102 @@
+# data source by Johns Hopkins University Center for Systems Science and Engineering
+
+raw_covid19_confirmed <- readr::read_csv("http://bit.ly/covid19-confirmed")
+raw_covid19_deaths <- readr::read_csv("http://bit.ly/covid19-deaths")
+raw_covid19_recovered <- readr::read_csv("http://bit.ly/covid19-recovered")
+
+covid19_cases <- function(data, value_name) {
+    data %>% 
+    tidyr::pivot_longer(cols = 5:ncol(data), 
+                        names_to = "date", 
+                        values_to = value_name) %>% 
+    dplyr::mutate(
+      date = lubridate::mdy(date)
+    ) %>% 
+    janitor::clean_names()
+}
+
+a <- covid19_cases(raw_covid19_confirmed, "confirmed")
+b <- covid19_cases(raw_covid19_deaths, "deaths")
+c <- covid19_cases(raw_covid19_recovered, "recovered")
+
+covid19_outbreak <- a %>% merge(b) %>% merge(c)
+
+
+latest_covid19 <- function(data) {
+  data %>% 
+    dplyr::group_by(province_state, country_region, lat, long) %>% 
+    dplyr::filter(date == max(date)) %>% 
+    dplyr::summarise(confirmed = sum(confirmed), 
+              deaths = sum(deaths), 
+              recovered = sum(recovered)) %>% 
+    dplyr::arrange(-confirmed) 
+}
+
+latest_covid19 <- latest_covid19(covid19_outbreak)
+
+readr::write_csv(covid19_outbreak, "covid19_outbreak.csv")
+readr::write_csv(latest_covid19, "latest_covid19.csv")
+
+rm(raw_covid19_confirmed, raw_covid19_deaths, raw_covid19_recovered, a, b, c)
+
+
+
+# # transforming elements in data
+# covid19_confirmed <- raw_covid19_confirmed %>% 
+#   pivot_longer(cols = 5:ncol(raw_covid19_confirmed),
+#                names_to = "date",
+#                values_to = "confirmed") %>% 
+#   clean_names()
+# 
+# covid19_deaths <- raw_covid19_deaths %>% 
+#   pivot_longer(cols = 5:ncol(raw_covid19_deaths),
+#                names_to = "date",
+#                values_to = "deaths") %>% 
+#   clean_names()
+# 
+# covid19_recovered <- raw_covid19_recovered %>% 
+#   pivot_longer(cols = 5:ncol(raw_covid19_recovered),
+#                names_to = "date",
+#                values_to = "recovered") %>% 
+#   clean_names()
+
+# # combine all data frames into one
+# 
+# covid19_outbreak <- covid19_confirmed %>%  
+#   merge(covid19_deaths) %>%    
+#   merge(covid19_recovered)
+# 
+# covid19_outbreak$date <- mdy(covid19_outbreak$date)
+
+
+# remove unnecessary dataframes
+
+
+# 
+# 
+# 
+# covid19_outbreak <- covid19_outbreak %>%  
+#   group_by(province_state, country_region, lat, long) 
+# 
+# 
+# latest_confirmed <- covid19_outbreak %>% 
+#   filter(status == "confirmed", date == max(date)) %>% 
+#   summarise(confirmed = sum(cases)) %>% 
+#   arrange(-confirmed) 
+# 
+# latest_deaths <- covid19_outbreak %>% 
+#   filter(status == "deaths", date == max(date)) %>% 
+#   summarise(deaths = sum(cases)) %>% 
+#   arrange(-deaths) 
+# 
+# latest_recovered <- covid19_outbreak %>% 
+#   filter(status == "recovered", date == max(date)) %>% 
+#   summarise(recovered = sum(cases)) %>% 
+#   arrange(-recovered) 
+# 
+# latest_outbreak <- latest_confirmed %>% merge(latest_deaths) %>% 
+#   merge(latest_recovered)
+# 
+# rm(latest_confirmed, latest_deaths, latest_recovered, latest_data)
+# 
+# write_csv(latest_outbreak, "latest_outbreak.csv")
