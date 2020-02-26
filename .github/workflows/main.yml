@@ -1,0 +1,45 @@
+on:
+  push:
+    branches: 
+      - master
+
+  schedule:
+    # auto run after every 6 hours every day
+    - cron:  '0 */6 * * *'
+
+
+name: covid19_dash
+
+jobs:
+  covid19_dash:
+    runs-on: ubuntu-16.04
+    steps:
+      - uses: actions/checkout@v2
+      - uses: r-lib/actions/setup-r@master
+      - uses: r-lib/actions/setup-pandoc@master
+      
+      - name: Cache R Packages
+        uses: actions/cache@v1.1.0
+        with:
+          path: ${{ env.R_LIBS_USER }}
+          key:  r-${{ hashFiles('DESCRIPTION') }}
+      
+      - name: Install OpenSSL
+        run: sudo apt-get update; sudo apt-get install libcurl4-openssl-dev; sudo apt-get install libssl-dev
+
+      - name: Install R Packages
+        run: |
+          Rscript -e 'options(Ncpus = 4); pkgs = c("pacman", "rmarkdown", "flexdashboard", "tidyr", "readr", "dplyr", "highcharter", "janitor", "kableExtra", "knitr", "kableExtra", "leaflet"); 
+          if(length(new.pkgs <- setdiff(pkgs, rownames(installed.packages())))) install.packages(new.pkgs)'
+      
+      - name: Render Rmarkdown
+        run: |
+          Rscript -e "rmarkdown::render('index.Rmd')"
+      - name: commit
+        env:
+         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}} 
+        run: |
+          git config user.email "${{ github.actor }}@users.noreply.github.com"
+          git config user.name "{{ github.actor }}"
+          git commit -am 'Re-build index.Rmd' || echo "No changes to commit"
+          git push -u origin HEAD:${{ github.ref }} || echo "Error in Push"
