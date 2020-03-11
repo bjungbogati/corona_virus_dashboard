@@ -1,1 +1,0 @@
-pacman::p_load("ggplot2", "tidyr", "readr", "dplyr", "highcharter", "googlesheets4", "janitor")

@@ -1,0 +1,38 @@
+About
+===================================== 
+
+Row 
+-----------------------------------------------------------------------
+
+### Descriptions
+
+An automated dashboard which daily updates the corona virus cases. 
+
+<br>
+
+The dashboard is made by:
+
+<li>R / RStudio - language and IDE</li>
+<li>Flexdashboard - dashboard tool</li> 
+<li>Leaflet - mapping</li> 
+<li>Highcharters - charts library</li>
+
+<br>
+
+Author: <a href="http://linkedin.com/in/bjungbogati">Binod Jung Bogati</a>, <a href="http://twitter.com/bjungbogati">@bjungbogati</a>
+
+
+### Sources : 
+
+<li><a href="https://github.com/CSSEGISandData/COVID-19">Johns Hopkins University CSSE</a></li>
+<li><a href="https://www.who.int/health-topics/coronavirus"> WHO</a></li>
+
+<br>
+
+Health Safety and Prevention Tips:  <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public"> More Details</a>
+
+<br><br>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6Ooz1GZsQ70" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+

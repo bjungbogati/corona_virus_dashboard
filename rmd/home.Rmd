@@ -1,0 +1,56 @@
+Home
+===================================== 
+
+Row
+-----------------------------------------------------------------------
+
+
+### Confirmed
+
+```{r}
+valueBox(sum(m$Confirmed) , caption = "Total Confirmed", icon = "fa-check", 
+         color="#222")
+```
+
+### Active
+
+```{r}
+valueBox(sum(m$Confirmed) - sum(m$Recovered) - sum(m$Deaths), 
+         caption = "Active Cases", icon = "fa-procedures", 
+         color=" #222")
+```
+
+
+### Deaths
+
+```{r}
+valueBox(sum(m$Deaths), caption = "Total Deaths", icon = "fa-skull", 
+         color=" #222")
+```
+
+### Recovered
+
+```{r}
+valueBox(sum(m$Recovered), caption = "Total Recovered", icon = "fa-heart", 
+         color=" #222")
+```
+
+Row 
+-----------------------------------------------------------------------
+
+
+### Global Spread of Corona Virus
+
+```{r}
+map_corona
+```
+
+
+### Corona Virus Spread by Number {data-width=250}
+
+```{r}
+names(m) <- c("Country", "Confirmed", "Deaths", "Recovered")
+kable(m) %>%
+  kableExtra::kable_styling("striped", full_width = T) 
+```
+
