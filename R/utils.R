@@ -31,11 +31,11 @@ covid19_cases_date <- highchart() %>%
   hc_chart(type = "line") %>%
   hc_xAxis(categories = n$date) %>%
   hc_add_series(name = "Confirmed", data = n$confirmed) %>%
-  hc_add_series(name = "Deaths", data = n$deaths) %>%
   hc_add_series(name = "Recovered", data = n$recovered) %>%
+  hc_add_series(name = "Deaths", data = n$deaths) %>%
   hc_title(text = "Covid19 Cases by Date") %>%
   hc_add_theme(hc_theme_darkunica()) %>%
-  hc_colors(c("#b9815b","#b53f40","#62a758")) %>% 
+  hc_colors(c("#b9815b","#62a758", "#b53f40")) %>% 
   hc_tooltip(table = TRUE, sort = TRUE)
 
 mytext <- function(data) {
@@ -66,7 +66,8 @@ map_corona <- leaflet(options = leafletOptions(attributionControl=F)) %>%
   addProviderTiles(providers$CartoDB.DarkMatter) %>% 
   addCircleMarkers(
     lng=latest_covid19$long, lat= latest_covid19$lat, 
-    radius = ifelse(latest_covid19$confirmed > 50, sqrt(latest_covid19$confirmed)/3, 2.5),
+    radius = ifelse(latest_covid19$confirmed > 50, sqrt(latest_covid19$confirmed)/3, 
+                    ifelse(latest_covid19$confirmed > 10, 3, 2)),
     stroke = FALSE, fillOpacity = 0.5, label = con_text, color = "#926444",
     labelOptions = labelOptions(style = list("font-weight" = "normal", 
                                              padding = "3px 8px"), 
@@ -77,7 +78,8 @@ map_corona <- leaflet(options = leafletOptions(attributionControl=F)) %>%
   ) %>% 
     addCircleMarkers(
       lng= only_deaths$long, lat= only_deaths$lat, 
-      radius = ifelse(only_deaths$deaths > 30, sqrt(only_deaths$deaths)/2.5, 2),
+      radius = ifelse(only_deaths$deaths > 30, sqrt(only_deaths$deaths)/2.5, 
+                      ifelse(only_deaths$deaths > 5, 3, 2)),
       stroke = FALSE, fillOpacity = 0.5, label = deaths_text, color = "#672223",
       labelOptions = labelOptions(style = list("font-weight" = "normal", 
                                                padding = "3px 8px"), 
@@ -88,7 +90,8 @@ map_corona <- leaflet(options = leafletOptions(attributionControl=F)) %>%
     ) %>% 
     addCircleMarkers(
       lng= only_recov$long, lat= only_recov$lat, 
-      radius = ifelse(only_recov$recovered > 50, sqrt(only_recov$recovered)/2.5, 2),
+      radius = ifelse(only_recov$recovered > 50, sqrt(only_recov$recovered)/3, 
+                      ifelse(only_recov$recovered > 10, 3, 2)),
       stroke = FALSE, fillOpacity = 0.5, label = recov_text, color = "#31542c",
       labelOptions = labelOptions(style = list("font-weight" = "normal", 
                                                padding = "3px 8px"), 
@@ -155,12 +158,12 @@ graph_df <- function(data, graph_type) {
   hc_chart(type = graph_type) %>%
   hc_xAxis(categories = data$country_region) %>%
   hc_add_series(name = "Confirmed", data = data$Confirmed) %>%
-  hc_add_series(name = "Deaths", data = data$Deaths) %>%
   hc_add_series(name = "Recovered", data = data$Recovered) %>%
+  hc_add_series(name = "Deaths", data = data$Deaths) %>%
   hc_title(text = paste("Top", nrow(data), "Countries by Cases (Excl. China)") ) %>%
   hc_add_theme(hc_theme_darkunica()) %>%
   hc_tooltip(table = TRUE, sort = TRUE) %>% 
-  hc_colors(c("#b9815b","#b53f40","#62a758")) 
+  hc_colors(c("#b9815b","#62a758", "#b53f40")) 
 }
 
 top_countries <- head(m, 11)[-1, ] 
