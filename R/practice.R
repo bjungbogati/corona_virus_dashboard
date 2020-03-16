@@ -30,10 +30,15 @@ coronavirus %>%
                  ))
 
 
-raw_conf <- read.csv(file = "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Confirmed.csv",
-                     stringsAsFactors = FALSE)
+# raw_conf <- read.csv(file = "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Confirmed.csv",
+#                      stringsAsFactors = FALSE)
 
-# Fixing typo
+raw_conf <- read.csv(file = "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Confirmed.csv",
+                     stringsAsFactors = FALSE, check.names=FALSE)
+
+raw_conf
+
+# # Fixing typo
 raw_conf$X2.6.20[which(raw_conf$Country.Region == "Japan")] <- 25
 
 
@@ -41,17 +46,25 @@ raw_conf$X2.6.20[which(raw_conf$Country.Region == "Japan")] <- 25
 # Creating new data frame
 df_conf <- raw_conf[, 1:4]
 
-for(i in 5:ncol(raw_conf)){
+daily_updates <- function(data, df) {
+
+for(i in 5:ncol(data)){
   print(i)
-  raw_conf[,i] <- as.integer(raw_conf[,i])
-  raw_conf[,i] <- ifelse(is.na(raw_conf[, i]), 0 , raw_conf[, i])
+  data[,i] <- as.integer(data[,i])
+  data[,i] <- ifelse(is.na(data[, i]), 0 , data[, i])
   
   if(i == 5){
-    df_conf[[names(raw_conf)[i]]] <- raw_conf[, i]
+    df[[names(data)[i]]] <- data[, i]
   } else {
-    df_conf[[names(raw_conf)[i]]] <- raw_conf[, i] - raw_conf[, i - 1]
+    df[[names(data)[i]]] <- data[, i] - data[, i - 1]
   }
 }
+  
+  return(df)
+  
+}
+
+dd <- daily_updates(raw_conf, df_conf)
 
 df_conf[[names(raw_conf)[5]]]
 

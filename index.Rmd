@@ -22,6 +22,12 @@ source("R/utils.R")
 ```{r trend, child = 'rmd/trend.Rmd'}
 ```
 
+<!-- Trend -->
+
+```{r country, child = 'rmd/country.Rmd'}
+```
+
+
 <!-- Summary 
 
 ```{r summary, child = 'rmd/summary.Rmd'}

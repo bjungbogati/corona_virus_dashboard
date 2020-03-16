@@ -1,7 +1,7 @@
 
 pacman::p_load("flexdashboard", "tidyr", "readr", "dplyr", "highcharter", "janitor", "kableExtra", "knitr", "leaflet")
 
-source("R/extract_data.R")
+source("R/extract_data.R") 
 
 # latest_outbreak <- readr::read_csv("latest_covid19.csv")
 # covid19_outbreak <- readr::read_csv("covid19_outbreak.csv")
@@ -42,8 +42,13 @@ mytext <- paste("<b>",
   lapply(htmltools::HTML)
 
 
+# 
+# mean(latest_covid19$long)
+# mean(latest_covid19$lat)
+
 map_corona <- leaflet(latest_covid19, 
                                options = leafletOptions(attributionControl=F)) %>%
+  setView(lng = 26.834559, lat = 26.3698814, zoom = 2) %>%
   addProviderTiles(providers$CartoDB.DarkMatter) %>% 
   addCircleMarkers(
     lng= ~long, lat= ~lat, 
@@ -58,6 +63,7 @@ map_corona <- leaflet(latest_covid19,
                                 direction = "auto",
                                 background = "#222")
   )
+
 
 
 ## modeling for trend
@@ -83,7 +89,6 @@ df <- data.frame(
 ) %>% 
   arrange(date)
 
-
 covid19_cases_trend <- highchart() %>%
   hc_chart(type = "line") %>%
   hc_xAxis(categories = df$date) %>%
@@ -93,5 +98,22 @@ covid19_cases_trend <- highchart() %>%
   hc_add_theme(hc_theme_darkunica()) %>%
   hc_tooltip(table = TRUE, sort = TRUE)
 
+graph_df <- function(data, graph_type) {
+  highchart() %>%
+  hc_chart(type = graph_type) %>%
+  hc_xAxis(categories = data$country_region) %>%
+  hc_add_series(name = "Confirmed", data = data$Confirmed) %>%
+  hc_add_series(name = "Deaths", data = data$Deaths) %>%
+  hc_add_series(name = "Recovered", data = data$Recovered) %>%
+  hc_title(text = paste("Top", nrow(data), "Countries by Cases (Excl. China)") ) %>%
+  hc_add_theme(hc_theme_darkunica()) %>%
+  hc_tooltip(table = TRUE, sort = TRUE)
+}
 
-## top 15 countries
+top_countries <- head(m, 11)[-1, ] 
+
+## top 10 countries
+
+# top_countries_graph <- graph_df(top_countries, "column")
+
+

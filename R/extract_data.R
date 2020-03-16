@@ -53,16 +53,42 @@ new_cases_covid19 <- function(data) {
     arrange(-confirmed)
 }
 
-
 latest_covid19 <- latest_covid19(covid19_outbreak)
+# 
+# 
+# raw_conf <- read.csv("http://bit.ly/covid19-confirmed", stringsAsFactors = FALSE, check.names=FALSE)
+# raw_deaths <- read.csv("http://bit.ly/covid19-deaths", stringsAsFactors = FALSE, check.names=FALSE)
+# raw_recov <- read.csv("http://bit.ly/covid19-recovered", stringsAsFactors = FALSE, check.names=FALSE)
+# 
+# df_conf <- raw_conf[, 1:4]
+# df_deaths <- raw_deaths[1:4]
+# df_recov <- raw_recov[1:4]
 
-
-
-
-
-
-
-rm(raw_covid19_confirmed, raw_covid19_deaths, raw_covid19_recovered, a, b, c)
+# daily_updates <- function(data, df, case_name) {
+#   
+#   for(i in 5:ncol(data)){
+#     print(i)
+#     data[,i] <- as.integer(data[,i])
+#     data[,i] <- ifelse(is.na(data[, i]), 0 , data[, i])
+#     
+#     if(i == 5){
+#       df[[names(data)[i]]] <- data[, i]
+#     } else {
+#       df[[names(data)[i]]] <- data[, i] - data[, i - 1]
+#     }
+#   }
+#   
+#   df <- covid19_cases(df, case_name)
+#   return(df)
+# }
+# 
+# df_conf <- daily_updates(raw_conf, df_conf, "confirmed")
+# df_deaths <- daily_updates(raw_deaths, df_deaths, "deaths")
+# df_recov <- daily_updates(raw_recov, df_recov, "recovered")
+# 
+# df_outbreak <- a %>% merge(b) %>% merge(c)
+# 
+# rm(raw_covid19_confirmed, raw_covid19_deaths, raw_covid19_recovered, a, b, c)
 
 # readr::write_csv(covid19_outbreak, "covid19_outbreak.csv")
 # readr::write_csv(latest_covid19, "latest_covid19.csv")
