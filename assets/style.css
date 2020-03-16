@@ -1,11 +1,55 @@
+.leaflet-touch .leaflet-control-layers, .leaflet-touch .leaflet-bar {
+    color: #fff;
+    background: #222;
+    
+}
+
+
 p, li {
     color: #ddd;
+}
+
+
+.fa-check {
+  color:#6f4c34 !important;
+}
+
+.fa-procedures{
+  color: #1f4a49 !important;
+}
+
+.fa-skull{
+  color:#672223 !important;
+}
+
+.fa-heart{
+  color:#31542c !important;
+}
+
+.fa-flag {
+  color:#2a3158 !important;
 }
 
 .navbar-inverse {
     background-color: #222;
     border-color: #2d2d2d;
 }
+
+ .leaflet-popup-content-wrapper,
+    .leaflet-popup-tip {
+    background: rgb(111, 51, 51);
+    box-shadow: 0 3px 14px rgba(0,0,0,0.4);
+}
+
+/* .leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+	background: #222 !important;
+	background-color: #222 !imporatant;
+	color: #fff;
+	box-shadow: 0 3px 14px rgba(0,0,0,0.4);
+	}
+*/
+
 
 body {
     background: #000;

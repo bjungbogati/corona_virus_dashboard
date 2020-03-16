@@ -28,7 +28,7 @@ covid19_outbreak <- a %>%
 latest_covid19 <- function(data) {
   data %>%
     group_by(province_state, country_region, lat, long) %>%
-    filter(date == max(date)) %>%
+    filter(date == max(date), confirmed != 0) %>%
     summarise(
       confirmed = sum(confirmed),
       deaths = sum(deaths),
