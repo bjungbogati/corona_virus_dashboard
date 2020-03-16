@@ -76,18 +76,7 @@ map_corona <- leaflet(options = leafletOptions(attributionControl=F)) %>%
                                 background = "#222"), 
     group = "Confirmed"
   ) %>% 
-    addCircleMarkers(
-      lng= only_deaths$long, lat= only_deaths$lat, 
-      radius = ifelse(only_deaths$deaths > 30, sqrt(only_deaths$deaths)/2.5, 
-                      ifelse(only_deaths$deaths > 5, 3, 2)),
-      stroke = FALSE, fillOpacity = 0.5, label = deaths_text, color = "#672223",
-      labelOptions = labelOptions(style = list("font-weight" = "normal", 
-                                               padding = "3px 8px"), 
-                                  textsize = "13px", 
-                                  direction = "auto",
-                                  background = "#222"), 
-      group = "Deaths"
-    ) %>% 
+   
     addCircleMarkers(
       lng= only_recov$long, lat= only_recov$lat, 
       radius = ifelse(only_recov$recovered > 50, sqrt(only_recov$recovered)/3, 
@@ -100,8 +89,20 @@ map_corona <- leaflet(options = leafletOptions(attributionControl=F)) %>%
                                   background = "#222"), 
       group = "Recovered"
     ) %>% 
+    addCircleMarkers(
+    lng= only_deaths$long, lat= only_deaths$lat, 
+    radius = ifelse(only_deaths$deaths > 30, sqrt(only_deaths$deaths)/2.5, 
+                    ifelse(only_deaths$deaths > 5, 3, 2)),
+    stroke = FALSE, fillOpacity = 0.5, label = deaths_text, color = "#672223",
+    labelOptions = labelOptions(style = list("font-weight" = "normal", 
+                                             padding = "3px 8px"), 
+                                textsize = "13px", 
+                                direction = "auto",
+                                background = "#222"), 
+    group = "Deaths"
+  ) %>% 
     addLayersControl(
-    baseGroups = c("Confirmed", "Deaths", "Recovered"),
+    baseGroups = c("Confirmed", "Recovered", "Deaths"),
     options = layersControlOptions(collapsed = F)
   )
   

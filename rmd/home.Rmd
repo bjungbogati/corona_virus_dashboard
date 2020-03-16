@@ -20,18 +20,17 @@ valueBox(sum(m$Confirmed) - sum(m$Recovered) - sum(m$Deaths),
          color="#222")
 ```
 
+### Recovered
+
+```{r}
+valueBox(sum(m$Recovered), caption = "Total Recovered", icon = "fa-heart", 
+         color="#222")
+```
 
 ### Deaths
 
 ```{r}
 valueBox(sum(m$Deaths), caption = "Total Deaths", icon = "fa-skull", 
-         color="#222")
-```
-
-### Recovered
-
-```{r}
-valueBox(sum(m$Recovered), caption = "Total Recovered", icon = "fa-heart", 
          color="#222")
 ```
 
