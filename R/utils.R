@@ -115,12 +115,6 @@ map_corona
 # map_corona(latest_covid19, , "", mytext)
 
 
-
-
-
-
-
-
 ## modeling for trend
 
 dat <- n %>% 
@@ -148,7 +142,7 @@ covid19_cases_trend <- highchart() %>%
   hc_chart(type = "line") %>%
   hc_xAxis(categories = df$date) %>%
   hc_add_series(name = "Confirmed", data = df$cases) %>%
-  hc_add_series(name = "Fit", data = df$model) %>% 
+  hc_add_series(name = "Predicted", data = df$model) %>% 
   hc_title(text = "Covid19 Cases by Trend") %>%
   hc_add_theme(hc_theme_darkunica()) %>%
   hc_colors(c("#b9815b","#f7a91f")) %>% 
@@ -168,6 +162,37 @@ graph_df <- function(data, graph_type) {
 }
 
 top_countries <- head(m, 11)[-1, ] 
+
+
+country_df <- function(data, graph_type) {
+  highchart() %>%
+    hc_chart(type = graph_type) %>%
+    hc_xAxis(categories = data$country_region) %>%
+    hc_add_series(name = "Confirmed", data = data$Confirmed) %>%
+    hc_add_series(name = "Recovered", data = data$Recovered) %>%
+    hc_add_series(name = "Deaths", data = data$Deaths) %>%
+    hc_title(text = paste("Top", nrow(data), "China vs Top 10 Countries") ) %>%
+    hc_add_theme(hc_theme_darkunica()) %>%
+    hc_tooltip(table = TRUE, sort = TRUE) %>% 
+    hc_colors(c("#b9815b","#62a758", "#b53f40")) 
+}
+
+
+
+# China vs Rest 5 countries
+
+country_date <- covid19_outbreak %>%  
+  group_by(country_region, date) %>% 
+  summarise( Confirmed = sum(confirmed), 
+             Deaths = sum(deaths), 
+             Recovered = sum(recovered)) %>% 
+  arrange(-Confirmed) 
+  
+
+
+m
+
+
 
 ## top 10 countries
 

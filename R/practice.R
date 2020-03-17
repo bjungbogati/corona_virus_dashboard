@@ -33,10 +33,17 @@ coronavirus %>%
 # raw_conf <- read.csv(file = "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Confirmed.csv",
 #                      stringsAsFactors = FALSE)
 
-raw_conf <- read.csv(file = "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Confirmed.csv",
+df <- read.csv(file = "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Confirmed.csv",
                      stringsAsFactors = FALSE, check.names=FALSE)
 
-raw_conf
+
+
+
+
+df[5:ncol(df)] <- df[5:ncol(df)]-df[,5]
+
+
+
 
 # # Fixing typo
 raw_conf$X2.6.20[which(raw_conf$Country.Region == "Japan")] <- 25

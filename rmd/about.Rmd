@@ -21,6 +21,8 @@ The dashboard is made by:
 
 Author: <a href="http://linkedin.com/in/bjungbogati">Binod Jung Bogati</a>, <a href="http://twitter.com/bjungbogati">@bjungbogati</a>
 
+<a href="https://www.linkedin.com/company/numericmind/">Numeric Mind</a>, <a href="http://twitter.com/numericmind">@numericmind</a>
+
 
 ### Sources : 
 
