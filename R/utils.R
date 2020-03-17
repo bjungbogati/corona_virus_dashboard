@@ -142,7 +142,7 @@ covid19_cases_trend <- highchart() %>%
   hc_chart(type = "line") %>%
   hc_xAxis(categories = df$date) %>%
   hc_add_series(name = "Confirmed", data = df$cases) %>%
-  hc_add_series(name = "Predicted", data = df$model) %>% 
+  hc_add_series(name = "Fit", data = df$model) %>% 
   hc_title(text = "Covid19 Cases by Trend") %>%
   hc_add_theme(hc_theme_darkunica()) %>%
   hc_colors(c("#b9815b","#f7a91f")) %>% 
