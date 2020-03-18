@@ -46,14 +46,14 @@ Row
 -----------------------------------------------------------------------
 
 
-### Global Spread of Corona Virus
+### Global Spread of Corona Virus - `r Sys.Date() - 1`
 
 ```{r}
 map_corona
 ```
 
 
-### Corona Virus Spread by Number {data-width=250}
+### Corona Virus Spread by Number - `r Sys.Date() - 1` {data-width=250}
 
 ```{r}
 names(m) <- c("Country", "Confirmed", "Deaths", "Recovered")

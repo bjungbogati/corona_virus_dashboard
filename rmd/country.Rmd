@@ -4,7 +4,7 @@ Country
 Row 
 -------------------------------------
 
-### Top 10 Countries (Excl China)
+### Top 10 Countries (Excl China) - `r Sys.Date() - 1`
 
 ```{r}
 graph_df(top_countries, "bar")

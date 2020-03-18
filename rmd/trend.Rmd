@@ -4,13 +4,13 @@ Trend
 Row 
 -------------------------------------
    
-### Cases by Date
+### Cases by Date - `r Sys.Date() - 1`
 
 ```{r}
 covid19_cases_date
 ```
 
-### Cases by Trend 
+### Cases by Trend - `r Sys.Date() - 1`
 
 ```{r}
 covid19_cases_trend
