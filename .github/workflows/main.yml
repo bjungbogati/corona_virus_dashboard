@@ -4,8 +4,8 @@ on:
       - master
 
   schedule:
-    # auto run after every 6 hours every day
-    - cron:  '0 */6 * * *'
+    # auto run after every 3 hours every day
+    - cron:  '0 */3 * * *'
 
 
 name: covid19_dash
@@ -34,7 +34,7 @@ jobs:
       
       - name: Render Rmarkdown
         run: |
-          Rscript -e "rmarkdown::render('index.Rmd')"
+          Rscript -e "rmarkdown::render('covid19.Rmd')"
       - name: commit
         env:
          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}} 
