@@ -8,14 +8,14 @@ Row
 ### Confirmed
 
 ```{r}
-valueBox(sum(m$Confirmed), caption = "Total Confirmed", icon = "fa-check", 
+valueBox(comma(sum(m$Confirmed)), caption = "Total Confirmed", icon = "fa-check", 
          color="#222")
 ```
 
 ### Active
 
 ```{r}
-valueBox(sum(m$Confirmed) - sum(m$Recovered) - sum(m$Deaths), 
+valueBox(comma(sum(m$Confirmed) - sum(m$Recovered) - sum(m$Deaths)), 
          caption = "Active Cases", icon = "fa-procedures", 
          color="#222")
 ```
@@ -23,14 +23,14 @@ valueBox(sum(m$Confirmed) - sum(m$Recovered) - sum(m$Deaths),
 ### Recovered
 
 ```{r}
-valueBox(sum(m$Recovered), caption = "Total Recovered", icon = "fa-heart", 
+valueBox(comma(sum(m$Recovered)), caption = "Total Recovered", icon = "fa-heart", 
          color="#222")
 ```
 
 ### Deaths
 
 ```{r}
-valueBox(sum(m$Deaths), caption = "Total Deaths", icon = "fa-skull", 
+valueBox(comma(sum(m$Deaths)), caption = "Total Deaths", icon = "fa-skull", 
          color="#222")
 ```
 
@@ -56,8 +56,8 @@ map_corona
 ### Corona Virus Spread by Number - `r Sys.Date() - 1` {data-width=250}
 
 ```{r}
-names(m) <- c("Country", "Confirmed", "Deaths", "Recovered")
-kable(m) %>%
+names(m1) <- c("Country", "Confirmed", "Deaths", "Recovered")
+kable(m1) %>%
   kableExtra::kable_styling("striped", full_width = T) 
 ```
 

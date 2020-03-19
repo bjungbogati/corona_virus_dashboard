@@ -1,5 +1,5 @@
 
-pacman::p_load("flexdashboard", "tidyr", "readr", "dplyr", "highcharter", "janitor", "kableExtra", "knitr", "leaflet")
+pacman::p_load("flexdashboard", "tidyr", "scales", "readr", "dplyr", "highcharter", "janitor", "kableExtra", "knitr", "leaflet")
 
 source("R/extract_data.R") 
 
@@ -11,7 +11,11 @@ m <- latest_covid19 %>%
   summarise( Confirmed = sum(confirmed), 
             Deaths = sum(deaths), 
             Recovered = sum(recovered)) %>% 
-  arrange(-Confirmed) 
+  arrange(-Confirmed)
+
+m1 <- m %>% mutate(Confirmed = comma(Confirmed), 
+         Deaths = comma(Deaths), 
+         Recovered = comma(Recovered))
 
 n <- covid19_outbreak %>% 
    group_by(date) %>% 
@@ -106,7 +110,6 @@ map_corona <- leaflet(options = leafletOptions(attributionControl=F)) %>%
     options = layersControlOptions(collapsed = F)
   )
   
-map_corona
 
 
 # 
@@ -190,7 +193,6 @@ country_date <- covid19_outbreak %>%
   
 
 
-m
 
 
 
