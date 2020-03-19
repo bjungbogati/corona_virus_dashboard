@@ -9,6 +9,13 @@ p, li {
     color: #ddd;
 }
 
+.value-box .icon i {
+    top: 25px;
+    right: 15px;
+    font-size: 60px;
+}
+
+
 
 .fa-check {
   color:#6f4c34 !important;
