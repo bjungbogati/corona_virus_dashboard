@@ -8,7 +8,7 @@ Row
 ### Confirmed
 
 ```{r}
-valueBox(comma(sum(m$Confirmed)), caption = "Total Confirmed", icon = "fa-check fa-sm", 
+valueBox(comma(sum(m$Confirmed)), caption = "Total Confirmed", icon = "fa-check", 
          color="#222")
 ```
 
@@ -16,28 +16,27 @@ valueBox(comma(sum(m$Confirmed)), caption = "Total Confirmed", icon = "fa-check 
 
 ```{r}
 valueBox(comma(sum(m$Confirmed) - sum(m$Recovered) - sum(m$Deaths)), 
-         caption = "Active Cases", icon = "fa-procedures fa-sm", 
-         color="#222")
+         caption = "Active Cases", icon = "fa-procedures", color="#222")
 ```
 
 ### Recovered
 
 ```{r}
-valueBox(comma(sum(m$Recovered)), caption = "Total Recovered", icon = "fa-heart fa-sm", 
+valueBox(comma(sum(m$Recovered)), caption = "Total Recovered", icon = "fa-heart", 
          color="#222")
 ```
 
 ### Deaths
 
 ```{r}
-valueBox(comma(sum(m$Deaths)), caption = "Total Deaths", icon = "fa-skull fa-sm", 
+valueBox(comma(sum(m$Deaths)), caption = "Total Deaths", icon = "fa-skull", 
          color="#222")
 ```
 
 ### Countries
 
 ```{r}
-valueBox(nrow(m), caption = "Countries Affected", icon = "fa-flag fa-sm", 
+valueBox(nrow(m), caption = "Countries Affected", icon = "fa-flag", 
          color="#222")
 ```
 

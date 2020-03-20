@@ -4,7 +4,6 @@
     
 }
 
-
 p, li {
     color: #ddd;
 }
@@ -15,26 +14,24 @@ p, li {
     font-size: 60px;
 }
 
-
-
 .fa-check {
-  color:#6f4c34 !important;
+  color: #ee6620 !important;
 }
 
 .fa-procedures{
-  color: #1f4a49 !important;
+  color: #52b1ae !important;
 }
 
 .fa-skull{
-  color:#672223 !important;
+  color: #e0522e !important;
 }
 
 .fa-heart{
-  color:#31542c !important;
+  color: #5ea94c !important;
 }
 
 .fa-flag {
-  color:#2a3158 !important;
+  color: #7487ef !important;
 }
 
 .navbar-inverse {
