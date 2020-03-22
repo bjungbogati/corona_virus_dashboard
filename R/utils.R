@@ -96,7 +96,7 @@ map_corona <- leaflet(options = leafletOptions(attributionControl=F)) %>%
     lng= only_deaths$long, lat= only_deaths$lat, 
     radius = ifelse(only_deaths$deaths > 30, sqrt(only_deaths$deaths)/2.5, 
                     ifelse(only_deaths$deaths > 5, 3, 2)),
-    stroke = FALSE, fillOpacity = 0.5, label = deaths_text, color = "#e04d22",
+    stroke = FALSE, fillOpacity = 0.5, label = deaths_text, color = "#ea3405",
     labelOptions = labelOptions(style = list("font-weight" = "normal", 
                                              padding = "3px 8px"), 
                                 textsize = "13px", 
