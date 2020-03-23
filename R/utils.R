@@ -39,7 +39,7 @@ covid19_cases_date <- highchart() %>%
   hc_add_series(name = "Deaths", data = n$deaths) %>%
   hc_title(text = "Covid19 Cases by Date") %>%
   hc_add_theme(hc_theme_darkunica()) %>%
-  hc_colors(c("#f56808","#6bce5b", "#e0522e")) %>% 
+  hc_colors(c("#da3f11","#6da700", "#bdbdbd")) %>% 
   hc_tooltip(table = TRUE, sort = TRUE)
 
 mytext <- function(data) { 
@@ -48,9 +48,9 @@ mytext <- function(data) {
                         data$country_region, 
                         paste0(data$province_state, " : ", 
                                data$country_region), "</b>"), "<br/>", 
-                "<b style='color: #c7561c;'> Confirmed: </b>", data$confirmed, "<br/>", 
-                "<b style='color: #4e8e3e;'> Recovered: </b>", data$recovered, "<br/>", 
-                "<b style='color: #e04d22;'> Deaths: </b>", data$deaths, sep="") %>%
+                "<b style='color: #bf4119;'> Confirmed: </b>", data$confirmed, "<br/>", 
+                "<b style='color: #006400;'> Recovered: </b>", data$recovered, "<br/>", 
+                "<b style='color: #333;'> Deaths: </b>", data$deaths, sep="") %>%
   lapply(htmltools::HTML)
   
 }
@@ -69,9 +69,9 @@ map_corona <- leaflet(options = leafletOptions(attributionControl=F)) %>%
   addProviderTiles(providers$CartoDB.DarkMatter) %>% 
   addCircleMarkers(
     lng=latest_covid19$long, lat= latest_covid19$lat, 
-    radius = ifelse(latest_covid19$confirmed > 50, sqrt(latest_covid19$confirmed)/3, 
+    radius = ifelse(latest_covid19$confirmed > 50, sqrt(latest_covid19$confirmed)/6, 
                     ifelse(latest_covid19$confirmed > 10, 3, 2)),
-    stroke = FALSE, fillOpacity = 0.5, label = con_text, color = "#ee6620",
+    stroke = FALSE, fillOpacity = 0.5, label = con_text, color = "#e94f20",
     labelOptions = labelOptions(style = list("font-weight" = "normal", 
                                              padding = "3px 8px"), 
                                 textsize = "13px", 
@@ -82,9 +82,9 @@ map_corona <- leaflet(options = leafletOptions(attributionControl=F)) %>%
    
     addCircleMarkers(
       lng= only_recov$long, lat= only_recov$lat, 
-      radius = ifelse(only_recov$recovered > 50, sqrt(only_recov$recovered)/3, 
+      radius = ifelse(only_recov$recovered > 50, sqrt(only_recov$recovered)/6, 
                       ifelse(only_recov$recovered > 10, 3, 2)),
-      stroke = FALSE, fillOpacity = 0.5, label = recov_text, color = "#5cb150",
+      stroke = FALSE, fillOpacity = 0.5, label = recov_text, color = "#6da700",
       labelOptions = labelOptions(style = list("font-weight" = "normal", 
                                                padding = "3px 8px"), 
                                   textsize = "13px", 
@@ -96,7 +96,7 @@ map_corona <- leaflet(options = leafletOptions(attributionControl=F)) %>%
     lng= only_deaths$long, lat= only_deaths$lat, 
     radius = ifelse(only_deaths$deaths > 30, sqrt(only_deaths$deaths)/2.5, 
                     ifelse(only_deaths$deaths > 5, 3, 2)),
-    stroke = FALSE, fillOpacity = 0.5, label = deaths_text, color = "#ea3405",
+    stroke = FALSE, fillOpacity = 0.5, label = deaths_text, color = "#bdbdbd",
     labelOptions = labelOptions(style = list("font-weight" = "normal", 
                                              padding = "3px 8px"), 
                                 textsize = "13px", 
@@ -147,7 +147,7 @@ covid19_cases_trend <- highchart() %>%
   hc_add_series(name = "Fit", data = df$model) %>% 
   hc_title(text = "Covid19 Cases by Trend") %>%
   hc_add_theme(hc_theme_darkunica()) %>%
-  hc_colors(c("#f56808","#f7a91f")) %>% 
+  hc_colors(c("#da3f11","#f7a91f")) %>% 
   hc_tooltip(table = TRUE, sort = TRUE)
 
 graph_df <- function(data, graph_type) {
@@ -160,7 +160,7 @@ graph_df <- function(data, graph_type) {
   hc_title(text = paste("Top", nrow(data), "Countries by Cases (Excl. China)") ) %>%
   hc_add_theme(hc_theme_darkunica()) %>%
   hc_tooltip(table = TRUE, sort = TRUE) %>% 
-  hc_colors(c("#f56808","#6bce5b", "#e0522e")) 
+  hc_colors(c("#da3f11","#6da700", "#bdbdbd")) 
 }
 
 top_countries <- head(m, 11)[-1, ] 
@@ -176,7 +176,7 @@ country_df <- function(data, graph_type) {
     hc_title(text = paste("Top", nrow(data), "China vs Top 10 Countries") ) %>%
     hc_add_theme(hc_theme_darkunica()) %>%
     hc_tooltip(table = TRUE, sort = TRUE) %>% 
-    hc_colors(c("#f56808","#6bce5b", "#e0522e")) 
+    hc_colors(c("#da3f11","#6da700", "#bdbdbd"))
 }
 
 

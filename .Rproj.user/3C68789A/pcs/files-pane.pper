@@ -1,9 +1,9 @@
 {
-    "path" : "~/R/dashboard/corona_virus/assets",
-    "sortOrder" : [
+    "path": "~/R/dashboard/corona_virus/assets",
+    "sortOrder": [
         {
-            "ascending" : false,
-            "columnIndex" : 2
+            "columnIndex": 2,
+            "ascending": false
         }
     ]
 }

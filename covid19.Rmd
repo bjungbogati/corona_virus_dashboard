@@ -1,10 +1,15 @@
 ---
-title: "Covid19 Dashboard"
+title: "Covid19 Dashboard - Numeric Mind"
+author: "Numeric Mind"
+date: "`r Sys.Date() - 1`"    
 output: 
   flexdashboard::flex_dashboard:
+    includes:
+      in_header: assets/header.html
     orientation: rows
     self_contained: False
     css: assets/style.css
+
 ---
 
 ```{r setup, include=FALSE}

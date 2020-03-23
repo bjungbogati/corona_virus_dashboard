@@ -14,20 +14,24 @@ p, li {
     font-size: 60px;
 }
 
+.navbar-author {
+  display: none;
+}
+
 .fa-check {
-  color: #ee6620 !important;
+  color: #da3f11 !important;
 }
 
 .fa-procedures{
-  color: #52b1ae !important;
+  color: #cc936d !important;
 }
 
 .fa-skull{
-  color: #ea3405 !important;
+  color: #bdbdbd !important;
 }
 
 .fa-heart{
-  color: #5ea94c !important;
+  color: #6da700 !important;
 }
 
 .fa-flag {
