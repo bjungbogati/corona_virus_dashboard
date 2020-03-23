@@ -40,7 +40,6 @@ valueBox(nrow(m), caption = "Countries Affected", icon = "fa-flag",
          color="#222")
 ```
 
-
 Row 
 -----------------------------------------------------------------------
 
