@@ -1,3 +1,16 @@
+.a2a_s__default {
+  background-color: #000 !important;
+}
+
+@media screen and (max-width: 1800px) {
+  .a2a_floating_style.a2a_vertical_style {background:transparent; left: 8px; top: 70%;}
+}
+
+/* Hide AddToAny vertical share bar when screen is less than 980 pixels wide */
+@media screen and (max-width: 980px) {
+    .a2a_floating_style.a2a_vertical_style {left: 88%;}
+}
+
 .leaflet-touch .leaflet-control-layers, .leaflet-touch .leaflet-bar {
     color: #fff;
     background: #222;

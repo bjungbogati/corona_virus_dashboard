@@ -27,9 +27,13 @@ Author:
 
 Share this dashboard:
 
+<!-- AddToAny BEGIN -->
+<script>var a2a_config = a2a_config || {}; a2a_config.onclick = 1;</script>
+<script async defer src="https://static.addtoany.com/menu/page.js"></script>
+<!-- AddToAny END -->
 
 
-<a href="https://www.facebook.com/sharer/sharer.php?u=https://dash.numericmind.com/covid19#home"><i class="fab fa-facebook-square"></i> Share</a> | <a href="https://twitter.com/share?url=https://dash.numericmind.com/covid19#home Coronavirus Dashboard #covid19 #coronavirus #numericmind"><i class="fab fa-twitter"></i> Tweet </a> | <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://dash.numericmind.com/covid19#home"><i class="fab fa-linkedin-in"></i> Share</a>
+<!-- <a href="https://www.facebook.com/sharer/sharer.php?u=https://dash.numericmind.com/covid19#home"><i class="fab fa-facebook-square"></i> Share</a> | <a href="https://twitter.com/share?url=https://dash.numericmind.com/covid19#home Coronavirus Dashboard #covid19 #coronavirus #numericmind"><i class="fab fa-twitter"></i> Tweet </a> | <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://dash.numericmind.com/covid19#home"><i class="fab fa-linkedin-in"></i> Share</a> -->
 
 
 ### Sources : 

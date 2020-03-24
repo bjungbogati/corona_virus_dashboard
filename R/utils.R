@@ -8,10 +8,35 @@ source("R/extract_data.R")
 
 m <- latest_covid19 %>%
   group_by(country_region) %>% 
-  summarise( Confirmed = sum(confirmed), 
+  summarise(Confirmed = sum(confirmed), 
             Deaths = sum(deaths), 
             Recovered = sum(recovered)) %>% 
   arrange(-Confirmed)
+
+top_country_date <- covid19_outbreak %>% 
+  filter(deaths > 10) %>% 
+  group_by(date, country_region) %>% 
+  summarise(Confirmed = sum(confirmed), 
+            Deaths = sum(deaths), 
+            Recovered = sum(recovered)) %>% 
+  top_n(10, Deaths) %>% 
+  arrange(date)
+
+top_deaths <- top_country_date %>% 
+  tidyr::pivot_longer(
+  cols = 3:5,
+  names_to = "type",
+  values_to = "cases"
+) %>% 
+  filter(type == "Deaths")
+
+hchart(top_country_date, "line", hcaes(x = date, y = Deaths, group = country_region))
+
+highchart() %>% 
+  hc_chart(type = "line") %>% 
+  hc_add_series(data = top_deaths, group = top_deaths$country_region, 
+                values = top_deaths$cases)
+
 
 m1 <- m %>% mutate(Confirmed = comma(Confirmed), 
          Deaths = comma(Deaths), 
@@ -166,6 +191,7 @@ graph_df <- function(data, graph_type) {
 top_countries <- head(m, 11)[-1, ] 
 
 
+
 country_df <- function(data, graph_type) {
   highchart() %>%
     hc_chart(type = graph_type) %>%
@@ -190,6 +216,9 @@ country_date <- covid19_outbreak %>%
              Recovered = sum(recovered)) %>% 
   arrange(-Confirmed) 
   
+
+# Top 10 countries with Deaths
+
 
 
 

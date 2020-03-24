@@ -1,3 +1,10 @@
+<div class="a2a_kit a2a_kit_size_32 a2a_floating_style a2a_vertical_style">
+<a class="a2a_dd" href="https://www.addtoany.com/share" rel="nofollow"></a>
+<a class="a2a_button_facebook" rel="nofollow"></a>
+<a class="a2a_button_twitter" rel="nofollow"></a>
+<a class="a2a_button_linkedin" rel="nofollow"></a>
+</div>
+
 Home
 ===================================== 
 
@@ -50,7 +57,6 @@ Row
 map_corona
 ```
 
-
 ### Corona Virus Spread by Number - `r Sys.Date() - 1` {data-width=250}
 
 ```{r}
@@ -58,4 +64,3 @@ names(m1) <- c("Country", "Confirmed", "Deaths", "Recovered")
 kable(m1) %>%
   kableExtra::kable_styling("striped", full_width = T) 
 ```
-

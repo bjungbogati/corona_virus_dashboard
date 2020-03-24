@@ -25,6 +25,8 @@ covid19_outbreak <- a %>%
   merge(b) %>%
   merge(c)
 
+
+
 latest_covid19 <- function(data) {
   data %>%
     group_by(province_state, country_region, lat, long) %>%
@@ -54,6 +56,8 @@ new_cases_covid19 <- function(data) {
 }
 
 latest_covid19 <- latest_covid19(covid19_outbreak)
+
+rm(a, b, c)
 # 
 # 
 # raw_conf <- read.csv("http://bit.ly/covid19-confirmed", stringsAsFactors = FALSE, check.names=FALSE)
