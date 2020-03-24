@@ -44,7 +44,7 @@ Row
 -----------------------------------------------------------------------
 
 
-### Global Spread of Corona Virus - `r Sys.Date() - 1`
+### Global Spread of Corona Virus - `r Sys.Date() - 1` 
 
 ```{r}
 map_corona
