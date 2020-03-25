@@ -11,4 +11,8 @@ dplyr,
 tidyr,
 janitor, 
 highcharter, 
-pacman
+pacman, 
+rvest, 
+lubridate, 
+stringr, 
+scales
