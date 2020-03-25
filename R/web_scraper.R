@@ -1,5 +1,4 @@
-library(rvest)
-library(stringr)
+
 
 url <- "https://www.worldometers.info/coronavirus/"
 

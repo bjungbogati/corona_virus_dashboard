@@ -77,7 +77,7 @@ deaths_text <- mytext(only_deaths)
 # mean(latest_covid19$lat)
 
 map_corona <- leaflet(options = leafletOptions(attributionControl=F)) %>%
-  setView(lng = 26.834559, lat = 26.3698814, zoom = 2.4) %>%
+  setView(lng = 26.834559, lat = 26.3698814, zoom = 2.4) %>% 
   addProviderTiles(providers$CartoDB.DarkMatter) %>% 
   addCircleMarkers(
     lng=latest_covid19$long, lat= latest_covid19$lat, 
@@ -119,8 +119,7 @@ map_corona <- leaflet(options = leafletOptions(attributionControl=F)) %>%
     addLayersControl(
     baseGroups = c("Confirmed", "Deaths"),
     options = layersControlOptions(collapsed = F)
-  )
-  
+  ) 
 
 # 
 # map_corona(latest_covid19, , "", mytext)

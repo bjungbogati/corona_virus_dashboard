@@ -6,7 +6,7 @@ Row
 
 ### Descriptions
 
-An automated dashboard which daily updates the corona virus cases. 
+<div style="float:left">An automated dashboard which daily updates the corona virus cases. 
 
 <br>
 
@@ -25,7 +25,12 @@ Author:
 
 <a href="https://www.linkedin.com/company/numericmind/">Numeric Mind</a>, <a href="http://twitter.com/numericmind">@numericmind</a>
 
-Share this dashboard:
+</div>
+
+<div style="float:right;margin: 90px 50px 0 0;">
+<a href="https://numericmind.com"><img src="assets/big-logo.png" width="100px"></a>
+</div>
+
 
 <!-- AddToAny BEGIN -->
 <script>var a2a_config = a2a_config || {}; a2a_config.onclick = 1;

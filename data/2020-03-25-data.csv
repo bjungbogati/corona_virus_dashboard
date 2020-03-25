@@ -1,16 +1,16 @@
 country_other,total_cases,new_cases,total_deaths,new_deaths,total_recovered,active_cases,serious_critical,tot_cases_1m_pop,tot_deaths_1m_pop
 China,81218,47,3281, 4,73650,4287,1399,56,  200
 Italy,69176,,6820,NA,8326,54030,3393,1144,11300
-USA,54916,35,784, 4,379,53753,1175,166,  200
+USA,54935,54,784, 4,379,53772,1175,166,  200
 Spain,42058,,2991,NA,3794,35273,2636,900, 6400
-Germany,32991,,159,NA,3290,29542,23,394,  200
+Germany,33593,602,164, 5,3299,30130,23,401,  200
 Iran,24811,,1934,NA,8913,13964,,295, 2300
 France,22304,,1100,NA,3281,17923,2516,342, 1700
 Switzerland,9991,114,133,11,131,9727,141,1154, 1500
 S Korea,9137,100,126, 6,3730,5281,59,178,  200
 UK,8077,,422,NA,135,7520,20,119,  600
 Netherlands,5560,,276,NA,2,5282,435,324, 1600
-Austria,5394,111,30, 2,9,5355,26,599,  300
+Austria,5427,144,30, 2,9,5388,26,603,  300
 Belgium,4269,,122,NA,461,3686,381,368, 1100
 Norway,2868,2,13, 1,6,2849,44,529,  200
 Canada,2792,,26,NA,112,2654,1,74,  070
@@ -31,7 +31,7 @@ Pakistan,1000,28,7,NA,19,974,5,5,  003
 Thailand,934,107,4,NA,70,860,11,13,  006
 Poland,927,26,12, 2,1,914,3,24,  030
 Chile,922,,2,NA,17,903,7,48,  010
-Romania,794,,12,NA,79,703,15,41,  060
+Romania,794,,13, 1,79,702,15,41,  070
 Finland,792,,1,NA,10,781,11,143,  020
 Saudi Arabia,767,,1,NA,28,738,,22,  003
 Greece,743,,20,NA,29,694,35,71,  200
@@ -39,20 +39,20 @@ Diamond Princess,712,,10,NA,587,115,15,,NA
 South Africa,709,155,,NA,4,705,2,12,NA
 Indonesia,686,,55,NA,30,601,,3,  020
 Iceland,648,,2,NA,51,595,13,1899,  600
+Philippines,636,84,38, 3,26,572,1,6,  030
 India,562,26,10,NA,40,512,,04,  001
 Singapore,558,,2,NA,156,400,17,95,  030
-Philippines,552,,35,NA,20,497,1,5,  030
 Qatar,526,,,NA,41,485,6,183,NA
 Russia,495,,1,NA,22,472,8,3,  001
 Slovenia,480,,4,NA,3,473,12,231,  200
 Panama,443,,6,NA,1,436,33,103,  100
+Croatia,418,36,1,NA,16,401,6,102,  020
 Peru,416,,7,NA,1,408,9,13,  020
 Mexico,405,38,5, 1,4,396,1,3,  004
 Egypt,402,,20,NA,80,302,,4,  020
 Bahrain,392,,3,NA,177,212,2,230,  200
 Argentina,387,,6,NA,52,329,,9,  010
 Hong Kong,387,,4,NA,102,281,4,52,  050
-Croatia,382,,1,NA,5,376,6,93,  020
 Colombia,378,,3,NA,6,369,,7,  006
 Estonia,369,,,NA,7,362,4,278,NA
 Lebanon,318,,4,NA,8,306,4,47,  060
@@ -65,11 +65,11 @@ Lithuania,255,46,2,NA,1,252,1,94,  070
 UAE,248,,2,NA,45,201,2,25,  020
 Taiwan,235,19,2,NA,29,204,,10,  008
 Hungary,226,39,10, 1,21,195,6,23,  100
+Latvia,221,24,,NA,1,220,,117,NA
 Bulgaria,220,2,3,NA,4,213,8,32,  040
 New Zealand,205,,,NA,22,183,,43,NA
 Slovakia,204,,,NA,7,197,2,37,NA
-Latvia,197,,,NA,1,196,,104,NA
-Kuwait,191,,,NA,39,152,5,45,NA
+Kuwait,195,4,,NA,43,152,6,46,NA
 Uruguay,189,,,NA,,189,3,54,NA
 San Marino,187,,21,NA,4,162,12,5511,61900
 Costa Rica,177,,2,NA,2,173,4,35,  040
@@ -94,8 +94,8 @@ Réunion,94,,,NA,1,93,,105,NA
 Cambodia,93,2,,NA,4,89,1,6,NA
 Venezuela,91,7,,NA,15,76,2,3,NA
 Azerbaijan,87,,1,NA,10,76,6,9,  010
+Belarus,86,5,,NA,22,64,2,9,NA
 Senegal,86,,,NA,8,78,,5,NA
-Belarus,81,,,NA,22,59,,9,NA
 Kazakhstan,79,7,,NA,,79,,4,NA
 Afghanistan,74,,2, 1,1,71,,2,  005
 Guadeloupe,73,,1,NA,,72,4,182,  200
@@ -134,15 +134,16 @@ Madagascar,19,2,,NA,,19,,07,NA
 Barbados,18,,,NA,,18,,63,NA
 Aruba,17,,,NA,1,16,,159,NA
 Gibraltar,15,,,NA,5,10,,445,NA
+New Caledonia,14,4,,NA,,14,,49,NA
 Maldives,13,,,NA,5,8,,24,NA
 Ethiopia,12,,,NA,,12,,01,NA
-New Caledonia,12,2,,NA,,12,,42,NA
 Tanzania,12,,,NA,,12,,02,NA
 Mongolia,10,,,NA,,10,,3,NA
 El Salvador,9,4,,NA,,9,,1,NA
 Equatorial Guinea,9,,,NA,,9,,6,NA
 Uganda,9,,,NA,,9,,02,NA
 Saint Martin,8,,,NA,,8,,207,NA
+Niger,7,4,1, 1,,6,,03,  004
 Dominica,7,,,NA,,7,,97,NA
 Haiti,7,,,NA,,7,,06,NA
 Namibia,7,,,NA,2,5,,3,NA
@@ -174,7 +175,6 @@ Djibouti,3,,,NA,,3,,3,NA
 Liberia,3,,,NA,,3,,06,NA
 Mozambique,3,,,NA,,3,,010,NA
 Myanmar,3,,,NA,,3,,006,NA
-Niger,3,,,NA,,3,,01,NA
 St Barth,3,,,NA,,3,,304,NA
 Saint Lucia,3,,,NA,,3,,16,NA
 Zambia,3,,,NA,,3,,02,NA
