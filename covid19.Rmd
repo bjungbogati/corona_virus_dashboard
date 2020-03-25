@@ -1,6 +1,7 @@
 ---
 title: "Covid19 Dashboard - Numeric Mind"
 author: "Numeric Mind"
+logo: assets/logo.png
 date: "`r Sys.Date() - 1`"    
 output: 
   flexdashboard::flex_dashboard:
