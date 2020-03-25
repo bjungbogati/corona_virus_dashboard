@@ -1,7 +1,9 @@
 
-pacman::p_load("flexdashboard", "tidyr", "scales", "readr", "dplyr", "highcharter", "janitor", "kableExtra", "knitr", "leaflet")
+pacman::p_load("rvest", "lubridate", "stringr", "flexdashboard", "tidyr", "scales", "readr", "dplyr", "highcharter", "janitor", "kableExtra", "knitr", "leaflet")
 
 source("R/extract_data.R") 
+source("R/web_scraper.R")
+source("R/trends.R")
 
 # latest_outbreak <- readr::read_csv("latest_covid19.csv")
 # covid19_outbreak <- readr::read_csv("covid19_outbreak.csv")
@@ -9,62 +11,47 @@ source("R/extract_data.R")
 m <- latest_covid19 %>%
   group_by(country_region) %>% 
   summarise(Confirmed = sum(confirmed), 
-            Deaths = sum(deaths), 
-            Recovered = sum(recovered)) %>% 
+            Deaths = sum(deaths)) %>% 
   arrange(-Confirmed)
 
-top_country_date <- covid19_outbreak %>% 
-  filter(deaths > 10) %>% 
-  group_by(date, country_region) %>% 
-  summarise(Confirmed = sum(confirmed), 
-            Deaths = sum(deaths), 
-            Recovered = sum(recovered)) %>% 
-  top_n(10, Deaths) %>% 
-  arrange(date)
-
-top_deaths <- top_country_date %>% 
-  tidyr::pivot_longer(
-  cols = 3:5,
-  names_to = "type",
-  values_to = "cases"
-) %>% 
-  filter(type == "Deaths")
-
-hchart(top_country_date, "line", hcaes(x = date, y = Deaths, group = country_region))
-
-highchart() %>% 
-  hc_chart(type = "line") %>% 
-  hc_add_series(data = top_deaths, group = top_deaths$country_region, 
-                values = top_deaths$cases)
 
 
-m1 <- m %>% mutate(Confirmed = comma(Confirmed), 
-         Deaths = comma(Deaths), 
-         Recovered = comma(Recovered))
+# hchart(top_country_date, "line", hcaes(x = date, y = Deaths, group = country_region))
+# 
+# highchart() %>% 
+#   hc_chart(type = "line") %>% 
+#   hc_add_series(data = top_deaths, group = top_deaths$country_region, 
+#                 values = top_deaths$cases)
+
+
+# m1 <- m %>% mutate(Confirmed = comma(Confirmed), 
+#          Deaths = comma(Deaths), 
+#          Recovered = comma(Recovered))
 
 n <- covid19_outbreak %>% 
    group_by(date) %>% 
    summarise(confirmed = sum(confirmed), 
-            deaths = sum(deaths), 
-            recovered = sum(recovered)) %>% 
+            deaths = sum(deaths) #, 
+            # recovered = sum(recovered)
+            ) %>% 
   arrange(confirmed)
 
-only_deaths <- latest_covid19 %>% 
-  filter(deaths != 0) 
+only_deaths <- latest_covid19 %>%
+  filter(deaths != 0)
         
-only_recov <- latest_covid19 %>% 
-  filter(recovered != 0) 
+# only_recov <- latest_covid19 %>% 
+#   filter(recovered != 0) 
 
 
 covid19_cases_date <- highchart() %>%
   hc_chart(type = "line") %>%
   hc_xAxis(categories = n$date) %>%
   hc_add_series(name = "Confirmed", data = n$confirmed) %>%
-  hc_add_series(name = "Recovered", data = n$recovered) %>%
+  # hc_add_series(name = "Recovered", data = n$recovered) %>%
   hc_add_series(name = "Deaths", data = n$deaths) %>%
   hc_title(text = "Covid19 Cases by Date") %>%
   hc_add_theme(hc_theme_darkunica()) %>%
-  hc_colors(c("#da3f11","#6da700", "#bdbdbd")) %>% 
+  hc_colors(c("#da3f11", "#bdbdbd")) %>%  #"#6da700",
   hc_tooltip(table = TRUE, sort = TRUE)
 
 mytext <- function(data) { 
@@ -74,7 +61,7 @@ mytext <- function(data) {
                         paste0(data$province_state, " : ", 
                                data$country_region), "</b>"), "<br/>", 
                 "<b style='color: #bf4119;'> Confirmed: </b>", data$confirmed, "<br/>", 
-                "<b style='color: #006400;'> Recovered: </b>", data$recovered, "<br/>", 
+                # "<b style='color: #006400;'> Recovered: </b>", data$recovered, "<br/>", 
                 "<b style='color: #333;'> Deaths: </b>", data$deaths, sep="") %>%
   lapply(htmltools::HTML)
   
@@ -82,7 +69,7 @@ mytext <- function(data) {
 
 con_text <- mytext(latest_covid19)
 deaths_text <- mytext(only_deaths)
-recov_text <- mytext(only_recov)
+# recov_text <- mytext(only_recov)
 
 
 # 
@@ -105,18 +92,18 @@ map_corona <- leaflet(options = leafletOptions(attributionControl=F)) %>%
     group = "Confirmed"
   ) %>% 
    
-    addCircleMarkers(
-      lng= only_recov$long, lat= only_recov$lat, 
-      radius = ifelse(only_recov$recovered > 50, sqrt(only_recov$recovered)/6, 
-                      ifelse(only_recov$recovered > 10, 3, 2)),
-      stroke = FALSE, fillOpacity = 0.5, label = recov_text, color = "#6da700",
-      labelOptions = labelOptions(style = list("font-weight" = "normal", 
-                                               padding = "3px 8px"), 
-                                  textsize = "13px", 
-                                  direction = "auto",
-                                  background = "#222"), 
-      group = "Recovered"
-    ) %>% 
+    # addCircleMarkers(
+    #   lng= only_recov$long, lat= only_recov$lat, 
+    #   radius = ifelse(only_recov$recovered > 50, sqrt(only_recov$recovered)/6, 
+    #                   ifelse(only_recov$recovered > 10, 3, 2)),
+    #   stroke = FALSE, fillOpacity = 0.5, label = recov_text, color = "#6da700",
+    #   labelOptions = labelOptions(style = list("font-weight" = "normal", 
+    #                                            padding = "3px 8px"), 
+    #                               textsize = "13px", 
+    #                               direction = "auto",
+    #                               background = "#222"), 
+    #   group = "Recovered"
+    # ) %>% 
     addCircleMarkers(
     lng= only_deaths$long, lat= only_deaths$lat, 
     radius = ifelse(only_deaths$deaths > 30, sqrt(only_deaths$deaths)/5, 
@@ -130,11 +117,10 @@ map_corona <- leaflet(options = leafletOptions(attributionControl=F)) %>%
     group = "Deaths"
   ) %>% 
     addLayersControl(
-    baseGroups = c("Confirmed", "Recovered", "Deaths"),
+    baseGroups = c("Confirmed", "Deaths"),
     options = layersControlOptions(collapsed = F)
   )
   
-
 
 # 
 # map_corona(latest_covid19, , "", mytext)
@@ -145,20 +131,23 @@ map_corona <- leaflet(options = leafletOptions(attributionControl=F)) %>%
 ## modeling for trend
 
 dat <- n %>% 
-  select(-deaths, -recovered) %>% 
+  select(-deaths, 
+         # -recovered
+         ) %>% 
   arrange(desc(date))
 
 x <- rev(1:nrow(dat))
 cases <- dat$confirmed
 model <- nls(cases ~ (x ^ b), start = c(b = 2), trace = T)
 
-predict_days <- 5
+
+predict_days <- 10
 
 x <- rev(1:(nrow(dat) + predict_days))
 pred <- x ^ coef(model)
 dates <- seq.Date(min(dat$date), max(dat$date) + predict_days, by = "days")
 
-df <- data.frame(
+model_df <- data.frame(
   date = rev(dates),
   cases = c(rep(NA, predict_days), cases),
   model = floor(pred)
@@ -167,9 +156,9 @@ df <- data.frame(
 
 covid19_cases_trend <- highchart() %>%
   hc_chart(type = "line") %>%
-  hc_xAxis(categories = df$date) %>%
-  hc_add_series(name = "Confirmed", data = df$cases) %>%
-  hc_add_series(name = "Fit", data = df$model) %>% 
+  hc_xAxis(categories = model_df$date) %>%
+  hc_add_series(name = "Confirmed", data = model_df$cases) %>%
+  hc_add_series(name = "Prediction", data = model_df$model) %>% 
   hc_title(text = "Covid19 Cases by Trend") %>%
   hc_add_theme(hc_theme_darkunica()) %>%
   hc_colors(c("#da3f11","#f7a91f")) %>% 
@@ -180,17 +169,15 @@ graph_df <- function(data, graph_type) {
   hc_chart(type = graph_type) %>%
   hc_xAxis(categories = data$country_region) %>%
   hc_add_series(name = "Confirmed", data = data$Confirmed) %>%
-  hc_add_series(name = "Recovered", data = data$Recovered) %>%
+  # hc_add_series(name = "Recovered", data = data$Recovered) %>%
   hc_add_series(name = "Deaths", data = data$Deaths) %>%
-  hc_title(text = paste("Top", nrow(data), "Countries by Cases (Excl. China)") ) %>%
+  hc_title(text = paste("Top", nrow(data), "Countries by Cases") ) %>%
   hc_add_theme(hc_theme_darkunica()) %>%
   hc_tooltip(table = TRUE, sort = TRUE) %>% 
-  hc_colors(c("#da3f11","#6da700", "#bdbdbd")) 
+  hc_colors(c("#da3f11","#bdbdbd"))  #"#6da700", 
 }
 
-top_countries <- head(m, 11)[-1, ] 
-
-
+top_countries <- head(m, 13)[, ] 
 
 country_df <- function(data, graph_type) {
   highchart() %>%
@@ -199,7 +186,7 @@ country_df <- function(data, graph_type) {
     hc_add_series(name = "Confirmed", data = data$Confirmed) %>%
     hc_add_series(name = "Recovered", data = data$Recovered) %>%
     hc_add_series(name = "Deaths", data = data$Deaths) %>%
-    hc_title(text = paste("Top", nrow(data), "China vs Top 10 Countries") ) %>%
+    hc_title(text = paste("Top", nrow(data), "China vs Other Countries") ) %>%
     hc_add_theme(hc_theme_darkunica()) %>%
     hc_tooltip(table = TRUE, sort = TRUE) %>% 
     hc_colors(c("#da3f11","#6da700", "#bdbdbd"))
@@ -212,8 +199,9 @@ country_df <- function(data, graph_type) {
 country_date <- covid19_outbreak %>%  
   group_by(country_region, date) %>% 
   summarise( Confirmed = sum(confirmed), 
-             Deaths = sum(deaths), 
-             Recovered = sum(recovered)) %>% 
+             Deaths = sum(deaths) #, 
+             # Recovered = sum(recovered)
+             ) %>% 
   arrange(-Confirmed) 
   
 

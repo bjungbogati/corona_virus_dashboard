@@ -28,7 +28,8 @@ Author:
 Share this dashboard:
 
 <!-- AddToAny BEGIN -->
-<script>var a2a_config = a2a_config || {}; a2a_config.onclick = 1;</script>
+<script>var a2a_config = a2a_config || {}; a2a_config.onclick = 1;
+</script>
 <script async defer src="https://static.addtoany.com/menu/page.js"></script>
 <!-- AddToAny END -->
 

@@ -4,9 +4,15 @@ Country
 Row 
 -------------------------------------
 
-### Top 10 Countries (Excl China) - `r Sys.Date() - 1`
+### Top Countries by Cases - `r Sys.Date() - 1`
 
 ```{r}
 graph_df(top_countries, "bar")
+```
+
+### Top Countries by Deaths - `r Sys.Date() - 1`
+
+```{r}
+death_trend
 ```
 

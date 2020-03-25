@@ -1,4 +1,4 @@
-<div class="a2a_kit a2a_kit_size_32 a2a_floating_style a2a_vertical_style">
+<div id= "socialbar" class="a2a_kit a2a_kit_size_32 a2a_floating_style a2a_vertical_style">
 <a class="a2a_dd" href="https://www.addtoany.com/share" rel="nofollow"></a>
 <a class="a2a_button_facebook" rel="nofollow"></a>
 <a class="a2a_button_twitter" rel="nofollow"></a>
@@ -15,35 +15,35 @@ Row
 ### Confirmed
 
 ```{r}
-valueBox(comma(sum(m$Confirmed)), caption = "Total Confirmed", icon = "fa-check", 
+valueBox(comma(n_total$confirmed), caption = "Total Confirmed", icon = "fa-check", 
          color="#222")
 ```
 
 ### Active
 
 ```{r}
-valueBox(comma(sum(m$Confirmed) - sum(m$Recovered) - sum(m$Deaths)), 
+valueBox(comma(n_total$active_cases), 
          caption = "Active Cases", icon = "fa-procedures", color="#222")
 ```
 
 ### Recovered
 
 ```{r}
-valueBox(comma(sum(m$Recovered)), caption = "Total Recovered", icon = "fa-heart", 
+valueBox(comma(n_total$recovered), caption = "Total Recovered", icon = "fa-heart", 
          color="#222")
 ```
 
 ### Deaths
 
 ```{r}
-valueBox(comma(sum(m$Deaths)), caption = "Total Deaths", icon = "fa-skull", 
+valueBox(comma(n_total$deaths), caption = "Total Deaths", icon = "fa-skull", 
          color="#222")
 ```
 
 ### Countries
 
 ```{r}
-valueBox(nrow(m), caption = "Countries Affected", icon = "fa-flag", 
+valueBox(nrow(tbl_df), caption = "Countries Affected", icon = "fa-flag", 
          color="#222")
 ```
 
@@ -60,7 +60,7 @@ map_corona
 ### Corona Virus Spread by Number - `r Sys.Date() - 1` {data-width=250}
 
 ```{r}
-names(m1) <- c("Country", "Confirmed", "Deaths", "Recovered")
-kable(m1) %>%
-  kableExtra::kable_styling("striped", full_width = T) 
+names(tbl_df) <- c("Country", "Confirmed", "Deaths", "Recovered")
+
+kable(tbl_df) %>% kableExtra::kable_styling("striped", full_width = T) 
 ```
