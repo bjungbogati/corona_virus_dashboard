@@ -171,7 +171,7 @@ graph_df <- function(data, graph_type) {
   hc_add_series(name = "Confirmed", data = data$Confirmed) %>%
   # hc_add_series(name = "Recovered", data = data$Recovered) %>%
   hc_add_series(name = "Deaths", data = data$Deaths) %>%
-  hc_title(text = paste("Top", nrow(data), "Countries by Cases") ) %>%
+  hc_title(text = "Top Countries by Cases") %>%
   hc_add_theme(hc_theme_darkunica()) %>%
   hc_tooltip(table = TRUE, sort = TRUE) %>% 
   hc_colors(c("#da3f11","#bdbdbd"))  #"#6da700", 

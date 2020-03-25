@@ -18,7 +18,7 @@ Portugal,2362,NA,33,NA,22,2307,48,232,  300
 Australia,2317,NA,8,NA,118,2191,11,91,  030
 Sweden,2299,NA,40,NA,16,2243,143,228,  400
 Brazil,2247,NA,46,NA,2,2199,18,11,  020
-Israel,2030,100,4, 1,58,1968,37,235,  050
+Israel,2030,100,5, 2,58,1967,37,235,  060
 Turkey,1872,NA,44,NA,,1828,,22,  050
 Malaysia,1796,172,16,NA,183,1597,64,55,  050
 Denmark,1591,NA,32,NA,1,1558,69,275,  600
@@ -107,11 +107,11 @@ Martinique,57,NA,1,NA,,56,7,152,  300
 Trinidad and Tobago,57,NA,,NA,,57,,41,NA
 Uzbekistan,55,  5,,NA,,55,4,2,NA
 Ghana,53,NA,2,NA,,51,,2,  006
+Montenegro,52,  5,1,NA,,51,,83,  200
 Liechtenstein,51,NA,,NA,,51,,1338,NA
 Cuba,48,NA,1,NA,1,46,2,4,  009
-Montenegro,47,NA,1,NA,,46,,75,  200
+Nigeria,46,  2,1,NA,2,43,,02,  000
 DRC,45,NA,2,NA,,43,,05,  002
-Nigeria,44,NA,1,NA,2,41,,02,  000
 Mauritius,42,NA,2,NA,,40,1,33,  200
 Kyrgyzstan,42,NA,,NA,,42,,6,NA
 Rwanda,40,NA,,NA,,40,,3,NA
@@ -130,9 +130,9 @@ French Guiana,23,NA,,NA,6,17,,77,NA
 Isle of Man,23,NA,,NA,,23,,270,NA
 Guatemala,21,NA,1,NA,,20,,1,  006
 Togo,20,NA,,NA,1,19,,2,NA
+Madagascar,19,  2,,NA,,19,,07,NA
 Barbados,18,NA,,NA,,18,,63,NA
 Aruba,17,NA,,NA,1,16,,159,NA
-Madagascar,17,NA,,NA,,17,,06,NA
 Gibraltar,15,NA,,NA,5,10,,445,NA
 Maldives,13,NA,,NA,5,8,,24,NA
 Ethiopia,12,NA,,NA,,12,,01,NA

@@ -68,7 +68,7 @@ death_trend <-  { highchart() %>%
   
   # Titles and credits
   hc_title(
-    text = "Top Countries by Deaths (Log Scale)"
+    text = "Top Countries by Deaths (Log Scale > 10 deaths)"
   ) %>%
   hc_add_theme(hc_theme_darkunica()) 
   
