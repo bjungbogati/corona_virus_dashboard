@@ -7,6 +7,7 @@ output:
   flexdashboard::flex_dashboard:
     includes:
       in_header: assets/header.html
+    mathjax: NULL
     orientation: rows
     self_contained: False
     css: assets/style.css
