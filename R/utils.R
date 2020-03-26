@@ -11,8 +11,11 @@ source("R/trends.R")
 m <- latest_covid19 %>%
   group_by(country_region) %>% 
   summarise(Confirmed = sum(confirmed), 
-            Deaths = sum(deaths)) %>% 
+            Deaths = sum(deaths), 
+            Recovered = sum(recovered)) %>% 
   arrange(-Confirmed)
+
+
 
 
 
@@ -31,28 +34,16 @@ m <- latest_covid19 %>%
 n <- covid19_outbreak %>% 
    group_by(date) %>% 
    summarise(confirmed = sum(confirmed), 
-            deaths = sum(deaths) #, 
-            # recovered = sum(recovered)
+            deaths = sum(deaths), 
+            recovered = sum(recovered)
             ) %>% 
   arrange(confirmed)
 
 only_deaths <- latest_covid19 %>%
   filter(deaths != 0)
         
-# only_recov <- latest_covid19 %>% 
-#   filter(recovered != 0) 
-
-
-covid19_cases_date <- highchart() %>%
-  hc_chart(type = "line") %>%
-  hc_xAxis(categories = n$date) %>%
-  hc_add_series(name = "Confirmed", data = n$confirmed) %>%
-  # hc_add_series(name = "Recovered", data = n$recovered) %>%
-  hc_add_series(name = "Deaths", data = n$deaths) %>%
-  hc_title(text = "Covid19 Cases by Date") %>%
-  hc_add_theme(hc_theme_darkunica()) %>%
-  hc_colors(c("#da3f11", "#bdbdbd")) %>%  #"#6da700",
-  hc_tooltip(table = TRUE, sort = TRUE)
+only_recov <- latest_covid19 %>% 
+ filter(recovered != 0) 
 
 mytext <- function(data) { 
                 paste("<b>",
@@ -61,7 +52,7 @@ mytext <- function(data) {
                         paste0(data$province_state, " : ", 
                                data$country_region), "</b>"), "<br/>", 
                 "<b style='color: #bf4119;'> Confirmed: </b>", data$confirmed, "<br/>", 
-                # "<b style='color: #006400;'> Recovered: </b>", data$recovered, "<br/>", 
+                "<b style='color: #006400;'> Recovered: </b>", data$recovered, "<br/>", 
                 "<b style='color: #333;'> Deaths: </b>", data$deaths, sep="") %>%
   lapply(htmltools::HTML)
   
@@ -69,7 +60,7 @@ mytext <- function(data) {
 
 con_text <- mytext(latest_covid19)
 deaths_text <- mytext(only_deaths)
-# recov_text <- mytext(only_recov)
+recov_text <- mytext(only_recov)
 
 
 # 
@@ -92,18 +83,18 @@ map_corona <- leaflet(options = leafletOptions(attributionControl=F)) %>%
     group = "Confirmed"
   ) %>% 
    
-    # addCircleMarkers(
-    #   lng= only_recov$long, lat= only_recov$lat, 
-    #   radius = ifelse(only_recov$recovered > 50, sqrt(only_recov$recovered)/6, 
-    #                   ifelse(only_recov$recovered > 10, 3, 2)),
-    #   stroke = FALSE, fillOpacity = 0.5, label = recov_text, color = "#6da700",
-    #   labelOptions = labelOptions(style = list("font-weight" = "normal", 
-    #                                            padding = "3px 8px"), 
-    #                               textsize = "13px", 
-    #                               direction = "auto",
-    #                               background = "#222"), 
-    #   group = "Recovered"
-    # ) %>% 
+    addCircleMarkers(
+      lng= only_recov$long, lat= only_recov$lat,
+      radius = ifelse(only_recov$recovered > 50, sqrt(only_recov$recovered)/6,
+                      ifelse(only_recov$recovered > 10, 3, 2)),
+      stroke = FALSE, fillOpacity = 0.5, label = recov_text, color = "#6da700",
+      labelOptions = labelOptions(style = list("font-weight" = "normal",
+                                               padding = "3px 8px"),
+                                  textsize = "13px",
+                                  direction = "auto",
+                                  background = "#222"),
+      group = "Recovered"
+    ) %>%
     addCircleMarkers(
     lng= only_deaths$long, lat= only_deaths$lat, 
     radius = ifelse(only_deaths$deaths > 30, sqrt(only_deaths$deaths)/5, 
@@ -117,7 +108,7 @@ map_corona <- leaflet(options = leafletOptions(attributionControl=F)) %>%
     group = "Deaths"
   ) %>% 
     addLayersControl(
-    baseGroups = c("Confirmed", "Deaths"),
+    baseGroups = c("Confirmed", "Recovered", "Deaths"),
     options = layersControlOptions(collapsed = F)
   ) 
 
@@ -131,7 +122,7 @@ map_corona <- leaflet(options = leafletOptions(attributionControl=F)) %>%
 
 dat <- n %>% 
   select(-deaths, 
-         # -recovered
+         -recovered
          ) %>% 
   arrange(desc(date))
 
@@ -163,17 +154,38 @@ covid19_cases_trend <- highchart() %>%
   hc_colors(c("#da3f11","#f7a91f")) %>% 
   hc_tooltip(table = TRUE, sort = TRUE)
 
+
+
+covid19_cases_date <- highchart() %>%
+  hc_chart(type = "line") %>%
+  hc_xAxis(categories = n$date) %>%
+  hc_add_series(name = "Confirmed", data = n$confirmed) %>%
+  hc_add_series(name = "Recovered", data = n$recovered) %>%
+  hc_add_series(name = "Deaths", data = n$deaths) %>%
+  hc_title(text = "Covid19 Cases by Date") %>%
+  hc_plotOptions(series = list(showInLegend = T,
+                               dataLabels = list(enabled = F), 
+                               marker = list(enabled = F))) %>%
+  hc_add_theme(hc_theme_darkunica()) %>%
+  hc_colors(c("#da3f11", "#6da700", "#bdbdbd")) %>%  
+  hc_tooltip(table = TRUE, sort = TRUE)
+
+
 graph_df <- function(data, graph_type) {
   highchart() %>%
   hc_chart(type = graph_type) %>%
   hc_xAxis(categories = data$country_region) %>%
   hc_add_series(name = "Confirmed", data = data$Confirmed) %>%
-  # hc_add_series(name = "Recovered", data = data$Recovered) %>%
+  hc_add_series(name = "Recovered", data = data$Recovered) %>%
   hc_add_series(name = "Deaths", data = data$Deaths) %>%
+  hc_plotOptions(series = list(showInLegend = T,
+                dataLabels = list(enabled = F), 
+                marker = list(enabled = F)),
+               column = list( colorByPoint = TRUE)) %>%
   hc_title(text = "Top Countries by Cases") %>%
   hc_add_theme(hc_theme_darkunica()) %>%
-  hc_tooltip(table = TRUE, sort = TRUE) %>% 
-  hc_colors(c("#da3f11","#bdbdbd"))  #"#6da700", 
+  hc_colors(c("#da3f11", "#6da700", "#bdbdbd")) %>% 
+  hc_tooltip(table = TRUE, sort = TRUE) 
 }
 
 top_countries <- head(m, 13)[, ] 
@@ -198,8 +210,8 @@ country_df <- function(data, graph_type) {
 country_date <- covid19_outbreak %>%  
   group_by(country_region, date) %>% 
   summarise( Confirmed = sum(confirmed), 
-             Deaths = sum(deaths) #, 
-             # Recovered = sum(recovered)
+             Deaths = sum(deaths),
+             Recovered = sum(recovered)
              ) %>% 
   arrange(-Confirmed) 
   

@@ -2,7 +2,7 @@
 
 raw_covid19_confirmed <- readr::read_csv("https://bit.ly/covid19_confirmed")
 raw_covid19_deaths <- readr::read_csv("http://bit.ly/covid19_deaths")
-# raw_covid19_recovered <- readr::read_csv("http://bit.ly/covid19-recovered")
+raw_covid19_recovered <- readr::read_csv("https://bit.ly/covid19_recover")
 
 
 covid19_cases <- function(data, value_name) {
@@ -20,10 +20,9 @@ covid19_cases <- function(data, value_name) {
 
 a <- covid19_cases(raw_covid19_confirmed, "confirmed")
 b <- covid19_cases(raw_covid19_deaths, "deaths")
-# c <- covid19_cases(raw_covid19_recovered, "recovered")
+c <- covid19_cases(raw_covid19_recovered, "recovered")
 
-covid19_outbreak <- a %>% full_join(b)
-   # %>% full_join(c, by = c("province_state", "country_region", "lat", "long", "date")) 
+covid19_outbreak <- a %>% merge(b) %>% merge(c)
 
 latest_covid19 <- function(data) {
   data %>%
@@ -31,7 +30,8 @@ latest_covid19 <- function(data) {
     filter(date == max(date), confirmed != 0) %>%
     summarise(
       confirmed = sum(confirmed),
-      deaths = sum(deaths)
+      deaths = sum(deaths), 
+      recovered = sum(recovered)
     ) %>%
     arrange(-confirmed)
 }
@@ -46,14 +46,15 @@ new_cases_covid19 <- function(data) {
     filter(date == max(date) ) %>%
     summarise(
       confirmed = sum(confirmed),
-      deaths = sum(deaths)
+      deaths = sum(deaths), 
+      recovered = sum(recovered)
     ) %>%
     arrange(-confirmed)
 }
 
 latest_covid19 <- latest_covid19(covid19_outbreak)
 
-rm(a, b)
+rm(a, b, c)
 
 
 # 
