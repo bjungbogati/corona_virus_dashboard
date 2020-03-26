@@ -24,6 +24,9 @@ c <- covid19_cases(raw_covid19_recovered, "recovered")
 
 covid19_outbreak <- a %>% merge(b) %>% merge(c)
 
+
+write_csv(covid19_outbreak, "data/covid19-latest.csv")
+
 latest_covid19 <- function(data) {
   data %>%
     group_by(province_state, country_region, lat, long) %>%
