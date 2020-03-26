@@ -12,10 +12,11 @@ m <- latest_covid19 %>%
   group_by(country_region) %>% 
   summarise(Confirmed = sum(confirmed), 
             Deaths = sum(deaths), 
-            Recovered = sum(recovered)) %>% 
+            Recovered = sum(recovered), 
+            Updated = Sys.Date() - 1) %>% 
   arrange(-Confirmed)
 
-
+write_csv(m, "data/covid19-latest-country-wise.csv")
 
 
 
@@ -35,7 +36,7 @@ n <- covid19_outbreak %>%
    group_by(date) %>% 
    summarise(confirmed = sum(confirmed), 
             deaths = sum(deaths), 
-            recovered = sum(recovered)
+            recovered = sum(recovered), 
             ) %>% 
   arrange(confirmed)
 
