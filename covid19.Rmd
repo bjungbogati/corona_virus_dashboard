@@ -9,6 +9,7 @@ output:
       in_header: assets/header.html
     mathjax: NULL
     orientation: rows
+    highlight: NULL
     self_contained: False
     css: assets/style.css
 ---

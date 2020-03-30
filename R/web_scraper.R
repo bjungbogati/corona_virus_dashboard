@@ -31,6 +31,10 @@ n_total <- df1 %>%
             serious_cases = chr_to_num(serious_critical)) %>% 
   arrange(confirmed)
 
+total_cases_wise_summary <- n_total %>% pivot_longer(cols= 1:7, 
+                         names_to = "case_type", 
+                         values_to = "case_number")
+
 
 
 # 

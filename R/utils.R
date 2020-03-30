@@ -40,6 +40,13 @@ n <- covid19_outbreak %>%
             ) %>% 
   arrange(confirmed)
 
+u <- n %>% pivot_longer(cols = 2:4, 
+                   names_to = "case_type", 
+                   values_to = "case_num")
+
+readr::write_csv(u, "data/covid19-latest-case-wise.csv")
+readr::write_csv(total_cases_wise_summary, "./data/covid19_cases_wise_summary.csv") #wescraper.csv
+
 only_deaths <- latest_covid19 %>%
   filter(deaths != 0)
         
@@ -190,6 +197,13 @@ graph_df <- function(data, graph_type) {
 }
 
 top_countries <- head(m, 13)[, ] 
+
+country_wise_cases_summary <- top_countries %>% select(-Updated) %>% 
+                               pivot_longer(cols = 2:4, 
+                               names_to = "case_type", 
+                               values_to = "case_num")
+
+readr::write_csv(country_wise_cases_summary, "./data/country_wise_cases_summary")
 
 country_df <- function(data, graph_type) {
   highchart() %>%

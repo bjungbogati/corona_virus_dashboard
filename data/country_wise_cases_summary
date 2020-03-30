@@ -1,0 +1,40 @@
+country_region,case_type,case_num
+US,Confirmed,140886
+US,Deaths,2467
+US,Recovered,2665
+Italy,Confirmed,97689
+Italy,Deaths,10779
+Italy,Recovered,13030
+China,Confirmed,82122
+China,Deaths,3304
+China,Recovered,75582
+Spain,Confirmed,80110
+Spain,Deaths,6803
+Spain,Recovered,14709
+Germany,Confirmed,62095
+Germany,Deaths,533
+Germany,Recovered,9211
+France,Confirmed,40708
+France,Deaths,2611
+France,Recovered,7226
+Iran,Confirmed,38309
+Iran,Deaths,2640
+Iran,Recovered,12391
+United Kingdom,Confirmed,19780
+United Kingdom,Deaths,1231
+United Kingdom,Recovered,151
+Switzerland,Confirmed,14829
+Switzerland,Deaths,300
+Switzerland,Recovered,1595
+Netherlands,Confirmed,10930
+Netherlands,Deaths,772
+Netherlands,Recovered,253
+Belgium,Confirmed,10836
+Belgium,Deaths,431
+Belgium,Recovered,1359
+"Korea, South",Confirmed,9583
+"Korea, South",Deaths,152
+"Korea, South",Recovered,5033
+Turkey,Confirmed,9217
+Turkey,Deaths,131
+Turkey,Recovered,105
