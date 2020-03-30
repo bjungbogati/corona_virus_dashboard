@@ -1,202 +1,202 @@
 country_other,total_cases,new_cases,total_deaths,new_deaths,total_recovered,active_cases,serious_critical,tot_cases_1m_pop,deaths_1m_pop,reported1st_case
-USA,142793,333,2490,  6,4562,135741,2970,431,  800,Jan 20
-Italy,97689,,10779,NA,13030,73880,3906,1616,17800,Jan 29
+USA,144565,1074,2602,20,4573,137390,2970,437,  800,Jan 20
+Italy,97689,,10779,,13030,73880,3906,1616,17800,Jan 29
 Spain,85195,5085,7340,537,16780,61075,5231,1822,15700,Jan 30
-Germany,62435,,541,NA,9211,52683,1979,745,  600,Jan 26
+Germany,63929,1494,560,19,9211,54158,1979,763,  700,Jan 26
 Iran,41495,3186,2757,117,13911,24827,3511,494, 3300,Feb 18
-France,40174,,2606,NA,7202,30366,4632,615, 4000,Jan 23
-UK,19522,,1228,NA,135,18159,163,288, 1800,Jan 30
-Switzerland,15475,646,327, 27,1823,13325,301,1788, 3800,Feb 24
-Belgium,11899,1063,513, 82,1527,9859,927,1027, 4400,Feb 03
-Netherlands,11750,884,864, 93,250,10636,972,686, 5000,Feb 26
-S Korea,9661,78,158,  6,5228,4275,59,188,  300,Jan 19
-Turkey,9217,,131,NA,105,8981,568,109,  200,Mar 09
-Austria,9200,412,108, 22,636,8456,193,1021, 1200,Feb 24
-Portugal,6408,446,140, 21,43,6225,164,628, 1400,Mar 01
-Canada,6320,,65,NA,573,5682,120,167,  200,Jan 24
-Norway,4393,109,31,  5,12,4350,97,810,  600,Feb 25
-Israel,4347,100,16,  1,134,4197,80,502,  200,Feb 20
-Brazil,4316,60,139,  3,120,4057,296,20,  070,Feb 24
-Australia,4245,82,18,  1,244,3983,28,166,  070,Jan 24
-Sweden,3700,,110,NA,16,3574,281,366, 1100,Jan 30
-Czechia,2866,49,17,  1,11,2838,52,268,  200,Feb 29
-Malaysia,2626,156,37,  2,479,2110,94,81,  100,Jan 24
-Ireland,2615,,46,NA,5,2564,59,530,  900,Feb 28
-Denmark,2555,160,77,  5,1,2477,113,441, 1300,Feb 26
-Chile,2139,,7,NA,75,2057,7,112,  040,Mar 02
-Romania,1952,137,46,  3,206,1700,31,101,  200,Feb 25
-Luxembourg,1950,,21,NA,40,1889,25,3115, 3400,Feb 28
-Ecuador,1924,,58,NA,3,1863,58,109,  300,Feb 28
-Poland,1905,43,26,  4,7,1872,3,50,  070,Mar 03
-Japan,1866,,54,NA,424,1388,56,15,  040,Jan 14
-Russia,1836,302,9,  1,66,1761,8,13,  006,Jan 30
-Pakistan,1625,28,20,  6,29,1576,11,7,  009,Feb 25
-Philippines,1546,128,78,  7,42,1426,1,14,  070,Jan 29
-Thailand,1524,136,9,  2,229,1286,11,22,  010,Jan 12
-Indonesia,1414,129,122,  8,75,1217,,5,  040,Mar 01
-Finland,1352,112,13,  2,10,1329,32,244,  200,Jan 28
-Saudi Arabia,1299,,8,NA,66,1225,12,37,  020,Mar 01
-South Africa,1280,,2,NA,31,1247,7,22,  003,Mar 04
-Greece,1156,,39,NA,52,1065,66,111,  400,Feb 25
-India,1071,47,29,  2,100,942,,08,  002,Jan 29
-Iceland,1020,,2,NA,135,883,25,2989,  600,Feb 27
-Mexico,993,145,20,  4,35,938,1,8,  020,Feb 27
-Panama,989,,24,NA,4,961,36,229,  600,Mar 09
-Dominican Republic,859,,39,NA,3,817,,79,  400,Feb 29
-Peru,852,,18,NA,16,818,40,26,  050,Mar 05
-Singapore,844,,3,NA,212,629,19,144,  050,Jan 22
-Argentina,820,,20,NA,91,709,,18,  040,Mar 02
-Croatia,790,77,6,NA,55,729,26,192,  100,Feb 24
-Slovenia,756,26,11,NA,10,735,28,364,  500,Mar 03
-Serbia,741,,14,  1,42,685,25,85,  200,Mar 05
-Estonia,715,36,3,NA,20,692,10,539,  200,Feb 26
-Diamond Princess,712,,10,NA,603,99,15,,NA,Feb 04
-Colombia,702,,10,NA,10,682,29,14,  020,Mar 05
-Hong Kong,642,,4,NA,118,520,5,86,  050,Jan 22
-Qatar,634,,1,NA,48,585,6,220,  030,Feb 28
-Egypt,609,,40,NA,132,437,,6,  040,Feb 13
-New Zealand,589,75,1,NA,63,525,2,122,  020,Feb 27
-UAE,570,,3,NA,58,509,2,58,  030,Jan 28
-Iraq,547,,42,NA,143,362,,14,  100,Feb 21
-Morocco,516,37,27,  1,13,476,1,14,  070,Mar 01
-Bahrain,515,16,4,NA,279,232,2,303,  200,Feb 23
-Algeria,511,,31,NA,31,449,,12,  070,Feb 24
-Lithuania,484,24,7,NA,1,476,5,178,  300,Feb 27
-Armenia,482,58,3,NA,30,449,15,163,  100,Feb 29
-Ukraine,480,5,11,  1,6,463,,11,  030,Mar 02
-Hungary,447,39,15,  2,34,398,6,46,  200,Mar 03
-Lebanon,446,8,11,  1,32,403,3,65,  200,Feb 20
-Latvia,376,29,,NA,1,375,3,199,NA,Mar 01
-Bosnia and Herzegovina,354,31,8,  2,17,329,1,108,  200,Mar 04
-Bulgaria,354,8,8,NA,15,331,13,51,  100,Mar 06
-Slovakia,336,22,,NA,7,329,1,62,NA,Mar 05
-Andorra,334,,6,NA,6,322,10,4323, 7800,Mar 01
-Costa Rica,314,,2,NA,3,309,6,62,  040,Mar 04
-Tunisia,312,,8,NA,2,302,10,26,  070,Mar 01
-Taiwan,306,8,5,  2,39,262,,13,  020,Jan 20
-Uruguay,304,,1,NA,,303,9,88,  030,Mar 12
-Kazakhstan,294,10,1,NA,20,273,,16,  005,Mar 12
-Kuwait,266,11,,NA,72,194,13,62,NA,Feb 23
-Moldova,263,,2,NA,13,248,33,65,  050,Mar 06
-North Macedonia,259,,6,NA,3,250,1,124,  300,Feb 25
-Jordan,259,,4,  1,18,237,3,25,  040,Mar 01
-San Marino,230,6,25,  3,13,192,16,6778,73700,Feb 26
-Albania,223,11,11,  1,44,168,7,77,  400,Mar 07
-Burkina Faso,222,,12,NA,23,187,,11,  060,Mar 08
-Cyprus,214,,6,NA,15,193,3,177,  500,Mar 08
-Azerbaijan,209,,4,NA,15,190,23,21,  040,Feb 27
-Vietnam,203,9,,NA,52,151,3,2,NA,Jan 22
-Réunion,183,,,NA,1,182,,204,NA,Mar 10
-Oman,179,12,,NA,29,150,3,35,NA,Feb 23
-Faeroe Islands,168,9,,NA,70,98,1,3438,NA,Mar 03
-Ivory Coast,165,,1,NA,4,160,,6,  004,Mar 10
-Senegal,162,20,,NA,27,135,,10,NA,Mar 01
-Malta,156,5,,NA,2,154,4,353,NA,Mar 06
-Ghana,152,,5,NA,2,145,1,5,  020,Mar 11
-Uzbekistan,149,5,2,NA,7,140,8,4,  006,Mar 14
-Cameroon,139,,6,NA,5,128,,5,  020,Mar 05
-Cuba,139,,3,NA,4,132,2,12,  030,Mar 10
-Honduras,139,29,3,NA,3,133,4,14,  030,Mar 10
-Brunei,127,1,1,NA,38,88,3,290,  200,Mar 08
-Sri Lanka,122,5,1,NA,15,106,5,6,  005,Jan 26
-Afghanistan,120,,4,NA,2,114,,3,  010,Feb 23
-Venezuela,119,,3,NA,39,77,6,4,  010,Mar 12
-Palestine,115,6,1,NA,18,96,,23,  020,Mar 04
-Nigeria,111,,1,NA,3,107,,05,  000,Feb 27
-Mauritius,110,3,3,NA,,107,1,86,  200,Mar 17
-Channel Islands,108,,2,NA,,106,,621, 1200,Mar 08
-Cambodia,107,4,,NA,21,86,1,6,NA,Jan 26
-Guadeloupe,106,,4,NA,17,85,10,265, 1000,Mar 12
-Georgia,98,7,,NA,18,80,1,25,NA,Feb 25
-Bolivia,96,15,3,  2,,93,3,8,  030,Mar 09
-Belarus,94,,,NA,32,62,2,10,NA,Feb 27
-Kyrgyzstan,94,10,,NA,,94,,14,NA,Mar 17
-Martinique,93,,1,NA,,92,12,248,  300,Mar 04
-Montenegro,91,6,1,NA,,90,1,145,  200,Mar 16
-Mayotte,82,19,,NA,10,72,3,301,NA,Mar 13
-DRC,81,,8,NA,2,71,,09,  009,Mar 09
-Trinidad and Tobago,78,,3,NA,1,74,,56,  200,Mar 11
-Rwanda,70,,,NA,,70,,5,NA,Mar 13
-Gibraltar,65,,,NA,14,51,,1929,NA,Mar 02
-Paraguay,64,5,3,NA,1,60,3,9,  040,Mar 06
-Liechtenstein,62,6,,NA,,62,,1626,NA,Mar 02
-Aruba,50,,,NA,1,49,,468,NA,Mar 12
-Bangladesh,49,1,5,NA,19,25,1,03,  003,Mar 07
-Monaco,46,,1,NA,1,44,,1172, 2500,Feb 27
-Isle of Man,46,4,,NA,,46,,541,NA,Mar 18
-French Guiana,43,,,NA,6,37,,144,NA,Mar 06
-Kenya,42,,1,NA,1,40,2,08,  002,Mar 12
-Madagascar,39,,,NA,,39,,1,NA,Mar 19
-Macao,38,1,,NA,10,28,,59,NA,Jan 21
-French Polynesia,35,5,,NA,,35,2,125,NA,Mar 10
-Guatemala,34,,1,NA,10,23,1,2,  006,Mar 12
-Barbados,33,,,NA,,33,,115,NA,Mar 16
-Uganda,33,,,NA,,33,,07,NA,Mar 20
-Jamaica,32,,1,NA,2,29,,11,  030,Mar 09
-Togo,30,5,1,NA,1,28,,4,  010,Mar 05
-El Salvador,30,6,,NA,,30,,5,NA,Mar 18
-Zambia,29,,,NA,,29,,2,NA,Mar 17
-Mali,25,7,2,  1,,23,,1,  010,Mar 24
-Ethiopia,23,2,,NA,1,22,,02,NA,Mar 12
-Niger,22,4,3,  2,,19,,09,  010,Mar 18
-Bermuda,22,,,NA,2,20,,353,NA,Mar 17
-Congo,19,,,NA,,19,,3,NA,Mar 14
-Tanzania,19,5,,NA,1,18,,03,NA,Mar 15
-Djibouti,18,,,NA,,18,,18,NA,Mar 17
-Maldives,17,,,NA,13,4,,31,NA,Mar 06
-Guinea,16,,,NA,,16,,1,NA,Mar 12
-Haiti,15,,,NA,1,14,,1,NA,Mar 19
-New Caledonia,15,,,NA,,15,,53,NA,Mar 17
-Bahamas,14,,,NA,1,13,,36,NA,Mar 14
-Cayman Islands,12,,1,NA,,11,,183, 1500,Mar 12
-Equatorial Guinea,12,,,NA,,12,,9,NA,Mar 13
-Eritrea,12,,,NA,,12,,3,NA,Mar 20
-Mongolia,12,,,NA,2,10,,4,NA,Mar 09
-Dominica,11,,,NA,,11,,153,NA,Mar 21
-Namibia,11,,,NA,2,9,,4,NA,Mar 13
-Saint Martin,11,,,NA,,11,,284,NA,Feb 29
-Greenland,10,,,NA,2,8,,176,NA,Mar 15
-Myanmar,10,,,NA,,10,,02,NA,Mar 22
-Syria,9,,1,NA,,8,,05,  006,Mar 21
-Grenada,9,,,NA,,9,,80,NA,Mar 21
-Saint Lucia,9,,,NA,1,8,,49,NA,Mar 12
-Eswatini,9,,,NA,,9,,8,NA,Mar 13
-Curaçao,8,,1,NA,2,5,,49,  600,Mar 12
-Guyana,8,,1,NA,,7,,10,  100,Mar 11
-Laos,8,,,NA,,8,,1,NA,Mar 23
-Libya,8,,,NA,,8,,1,NA,Mar 23
-Mozambique,8,,,NA,,8,,03,NA,Mar 21
-Seychelles,8,,,NA,,8,,81,NA,Mar 13
-Suriname,8,,,NA,,8,,14,NA,Mar 12
-Angola,7,,2,NA,,5,,02,  006,Mar 19
-Gabon,7,,1,NA,,6,,3,  040,Mar 12
-Zimbabwe,7,,1,NA,,6,,05,  007,Mar 19
-Antigua and Barbuda,7,,,NA,,7,,71,NA,Mar 12
-Saint Kitts and Nevis,7,5,,NA,,7,,132,NA,Mar 24
-Sudan,6,,2,  1,,4,,01,  005,Mar 12
-Cabo Verde,6,,1,NA,,5,,11,  200,Mar 19
-Benin,6,,,NA,,6,,05,NA,Mar 15
-Vatican City,6,,,NA,,6,,7491,NA,Mar 05
-Sint Maarten,6,,,NA,,6,,140,NA,Mar 17
-Nepal,5,,,NA,1,4,,02,NA,Jan 23
-Fiji,5,,,NA,,5,,6,NA,Mar 18
-Mauritania,5,,,NA,2,3,,1,NA,Mar 12
-Montserrat,5,,,NA,,5,,1002,NA,Mar 17
-St Barth,5,,,NA,,5,,506,NA,Feb 29
-Gambia,4,,1,NA,,3,,2,  040,Mar 16
-Nicaragua,4,,1,NA,,3,,06,  020,Mar 18
-Bhutan,4,,,NA,,4,,5,NA,Mar 05
-Turks and Caicos,4,,,NA,,4,,103,NA,Mar 22
-CAR,3,,,NA,,3,,06,NA,Mar 14
-Chad,3,,,NA,,3,,02,NA,Mar 18
-Liberia,3,,,NA,,3,,06,NA,Mar 15
-Somalia,3,,,NA,,3,,02,NA,Mar 15
-MS Zaandam,2,,,NA,,2,,,NA,Mar 26
-Anguilla,2,,,NA,,2,,133,NA,Mar 25
-Belize,2,,,NA,,2,,5,NA,Mar 22
-British Virgin Islands,2,,,NA,,2,,66,NA,Mar 24
-GuineaBissau,2,,,NA,,2,,1,NA,Mar 24
-Papua New Guinea,1,,,NA,,1,,01,NA,Mar 19
-St Vincent Grenadines,1,,,NA,1,0,,9,NA,Mar 10
-TimorLeste,1,,,NA,,1,,08,NA,Mar 20
-China,81470,31,3304,  4,75700,2466,633,57,  200,Jan 10
+France,40174,,2606,,7202,30366,4632,615, 4000,Jan 23
+UK,19522,,1415,187,135,17972,163,288, 2100,Jan 30
+Switzerland,15526,697,333,33,1823,13370,301,1794, 3800,Feb 24
+Belgium,11899,1063,513,82,1527,9859,927,1027, 4400,Feb 03
+Netherlands,11750,884,864,93,250,10636,1053,686, 5000,Feb 26
+S Korea,9661,78,158,6,5228,4275,59,188,  300,Jan 19
+Austria,9377,589,108,22,636,8633,193,1041, 1200,Feb 24
+Turkey,9217,,131,,105,8981,568,109,  200,Mar 09
+Canada,6671,351,67,2,1014,5590,120,177,  200,Jan 24
+Portugal,6408,446,140,21,43,6225,164,628, 1400,Mar 01
+Norway,4393,109,31,5,12,4350,97,810,  600,Feb 25
+Israel,4347,100,16,1,134,4197,80,502,  200,Feb 20
+Brazil,4330,74,140,4,120,4070,296,20,  070,Feb 24
+Australia,4245,82,18,1,244,3983,28,166,  070,Jan 24
+Sweden,4028,328,146,36,16,3866,306,399, 1400,Jan 30
+Czechia,2896,79,17,1,11,2868,52,270,  200,Feb 29
+Malaysia,2626,156,37,2,479,2110,94,81,  100,Jan 24
+Ireland,2615,,46,,5,2564,59,530,  900,Feb 28
+Denmark,2555,160,77,5,1,2477,113,441, 1300,Feb 26
+Chile,2449,310,8,1,156,2285,14,128,  040,Mar 02
+Luxembourg,1988,38,22,1,40,1926,25,3176, 3500,Feb 28
+Poland,1984,122,26,4,7,1951,3,52,  070,Mar 03
+Romania,1952,137,46,3,206,1700,31,101,  200,Feb 25
+Ecuador,1924,,58,,3,1863,58,109,  300,Feb 28
+Japan,1866,,54,,424,1388,56,15,  040,Jan 14
+Russia,1836,302,9,1,66,1761,8,13,  006,Jan 30
+Pakistan,1650,53,20,6,29,1601,11,7,  009,Feb 25
+Philippines,1546,128,78,7,42,1426,1,14,  070,Jan 29
+Thailand,1524,136,9,2,229,1286,11,22,  010,Jan 12
+Saudi Arabia,1453,154,8,,115,1330,12,42,  020,Mar 01
+Indonesia,1414,129,122,8,75,1217,,5,  040,Mar 01
+Finland,1352,112,13,2,10,1329,49,244,  200,Jan 28
+South Africa,1280,,2,,31,1247,7,22,  003,Mar 04
+Greece,1212,56,43,4,52,1117,66,116,  400,Feb 25
+India,1071,47,29,2,100,942,,08,  002,Jan 29
+Iceland,1020,,2,,135,883,25,2989,  600,Feb 27
+Mexico,993,145,20,4,35,938,1,8,  020,Feb 27
+Panama,989,,24,,4,961,36,229,  600,Mar 09
+Dominican Republic,901,42,42,3,4,855,,83,  400,Feb 29
+Singapore,879,35,3,,228,648,19,150,  050,Jan 22
+Peru,852,,18,,16,818,40,26,  050,Mar 05
+Argentina,820,,22,2,228,570,,18,  050,Mar 02
+Croatia,790,77,6,,67,717,27,192,  100,Feb 24
+Serbia,785,44,16,3,42,727,62,90,  200,Mar 05
+Slovenia,756,26,11,,10,735,28,364,  500,Mar 03
+Estonia,715,36,3,,20,692,10,539,  200,Feb 26
+Diamond Princess,712,,10,,603,99,15,,NA,Feb 04
+Colombia,702,,10,,10,682,29,14,  020,Mar 05
+Hong Kong,642,,4,,118,520,5,86,  050,Jan 22
+Qatar,634,,1,,48,585,6,220,  030,Feb 28
+UAE,611,41,5,2,61,545,2,62,  050,Jan 28
+Egypt,609,,40,,132,437,,6,  040,Feb 13
+New Zealand,589,75,1,,63,525,2,122,  020,Feb 27
+Iraq,547,,42,,143,362,,14,  100,Feb 21
+Morocco,516,37,29,3,14,473,1,14,  080,Mar 01
+Bahrain,515,16,4,,279,232,2,303,  200,Feb 23
+Algeria,511,,31,,31,449,,12,  070,Feb 24
+Lithuania,484,24,7,,1,476,5,178,  300,Feb 27
+Armenia,482,58,3,,30,449,15,163,  100,Feb 29
+Ukraine,480,5,11,1,6,463,,11,  030,Mar 02
+Hungary,447,39,15,2,34,398,6,46,  200,Mar 03
+Lebanon,446,8,11,1,35,400,3,65,  200,Feb 20
+Latvia,376,29,,,1,375,3,199,NA,Mar 01
+Bulgaria,359,13,8,,17,334,13,52,  100,Mar 06
+Bosnia and Herzegovina,354,31,8,2,17,329,1,108,  200,Mar 04
+Slovakia,336,22,,,7,329,1,62,NA,Mar 05
+Andorra,334,,6,,6,322,10,4323, 7800,Mar 01
+Costa Rica,314,,2,,3,309,6,62,  040,Mar 04
+Tunisia,312,,8,,2,302,10,26,  070,Mar 01
+Taiwan,306,8,5,2,39,262,,13,  020,Jan 20
+Uruguay,304,,1,,,303,9,88,  030,Mar 12
+Kazakhstan,302,18,1,,21,280,,16,  005,Mar 12
+North Macedonia,285,26,7,1,12,266,1,137,  300,Feb 25
+Azerbaijan,273,64,4,,26,243,23,27,  040,Feb 27
+Kuwait,266,11,,,72,194,13,62,NA,Feb 23
+Moldova,263,,2,,13,248,44,65,  050,Mar 06
+Jordan,259,,4,1,18,237,3,25,  040,Mar 01
+San Marino,230,6,25,3,13,192,16,6778,73700,Feb 26
+Cyprus,230,16,7,1,15,208,3,190,  600,Mar 08
+Albania,223,11,11,1,44,168,7,77,  400,Mar 07
+Burkina Faso,222,,12,,23,187,,11,  060,Mar 08
+Vietnam,203,9,,,55,148,3,2,NA,Jan 22
+Réunion,183,,,,1,182,,204,NA,Mar 10
+Oman,179,12,,,29,150,3,35,NA,Feb 23
+Faeroe Islands,168,9,,,70,98,1,3438,NA,Mar 03
+Ivory Coast,165,,1,,4,160,,6,  004,Mar 10
+Senegal,162,20,,,27,135,,10,NA,Mar 01
+Malta,156,5,,,2,154,4,353,NA,Mar 06
+Ghana,152,,5,,2,145,1,5,  020,Mar 11
+Belarus,152,58,,,32,120,2,16,NA,Feb 27
+Uzbekistan,149,5,2,,7,140,8,4,  006,Mar 14
+Afghanistan,145,25,4,,2,139,,4,  010,Feb 23
+Channel Islands,141,33,2,,,139,,811, 1200,Mar 08
+Cameroon,139,,6,,5,128,,5,  020,Mar 05
+Cuba,139,,3,,4,132,2,12,  030,Mar 10
+Honduras,139,29,3,,3,133,4,14,  030,Mar 10
+Venezuela,129,10,3,,39,87,6,5,  010,Mar 12
+Mauritius,128,21,3,,,125,1,101,  200,Mar 17
+Brunei,127,1,1,,38,88,3,290,  200,Mar 08
+Sri Lanka,122,5,2,1,15,105,5,6,  009,Jan 26
+Palestine,115,6,1,,18,96,,23,  020,Mar 04
+Nigeria,111,,1,,3,107,,05,  000,Feb 27
+Cambodia,107,4,,,21,86,1,6,NA,Jan 26
+Guadeloupe,106,,4,,17,85,10,265, 1000,Mar 12
+Georgia,100,9,,,18,82,6,25,NA,Feb 25
+Bolivia,97,16,4,3,,93,3,8,  030,Mar 09
+Kyrgyzstan,94,10,,,,94,,14,NA,Mar 17
+Martinique,93,,1,,,92,12,248,  300,Mar 04
+Montenegro,91,6,1,,,90,1,145,  200,Mar 16
+Trinidad and Tobago,82,4,3,,1,78,,59,  200,Mar 11
+Mayotte,82,19,,,10,72,3,301,NA,Mar 13
+DRC,81,,8,,2,71,,09,  009,Mar 09
+Rwanda,70,,,,,70,,5,NA,Mar 13
+Gibraltar,65,,,,14,51,,1929,NA,Mar 02
+Paraguay,64,5,3,,1,60,3,9,  040,Mar 06
+Liechtenstein,62,6,,,,62,,1626,NA,Mar 02
+Kenya,50,8,1,,1,48,2,09,  002,Mar 12
+Aruba,50,,,,1,49,,468,NA,Mar 12
+Bangladesh,49,1,5,,19,25,1,03,  003,Mar 07
+Isle of Man,49,7,,,,49,,576,NA,Mar 18
+Monaco,46,,1,,1,44,,1172, 2500,Feb 27
+French Guiana,43,,,,6,37,,144,NA,Mar 06
+Madagascar,39,,,,,39,,1,NA,Mar 19
+Macao,38,1,,,10,28,,59,NA,Jan 21
+Guatemala,36,2,1,,10,25,1,2,  006,Mar 12
+French Polynesia,35,5,,,,35,2,125,NA,Mar 10
+Zambia,35,6,,,,35,,2,NA,Mar 17
+Jamaica,34,2,1,,2,31,,11,  030,Mar 09
+Barbados,33,,,,,33,,115,NA,Mar 16
+Uganda,33,,,,,33,,07,NA,Mar 20
+Togo,30,5,1,,1,28,,4,  010,Mar 05
+El Salvador,30,6,,,,30,5,5,NA,Mar 18
+Mali,25,7,2,1,,23,,1,  010,Mar 24
+Ethiopia,23,2,,,1,22,,02,NA,Mar 12
+Niger,22,4,3,2,,19,,09,  010,Mar 18
+Bermuda,22,,,,2,20,,353,NA,Mar 17
+Congo,19,,,,,19,,3,NA,Mar 14
+Tanzania,19,5,,,1,18,,03,NA,Mar 15
+Djibouti,18,,,,,18,,18,NA,Mar 17
+Maldives,17,,,,13,4,,31,NA,Mar 06
+Guinea,16,,,,,16,,1,NA,Mar 12
+Saint Martin,15,4,1,1,2,12,,388, 2600,Feb 29
+Haiti,15,,,,1,14,,1,NA,Mar 19
+New Caledonia,15,,,,,15,,53,NA,Mar 17
+Bahamas,14,,,,1,13,,36,NA,Mar 14
+Myanmar,14,4,,,,14,,03,NA,Mar 22
+Cayman Islands,12,,1,,,11,,183, 1500,Mar 12
+Equatorial Guinea,12,,,,,12,,9,NA,Mar 13
+Eritrea,12,,,,,12,,3,NA,Mar 20
+Mongolia,12,,,,2,10,,4,NA,Mar 09
+Curaçao,11,3,1,,2,8,,67,  600,Mar 12
+Dominica,11,,,,,11,,153,NA,Mar 21
+Namibia,11,,,,2,9,,4,NA,Mar 13
+Greenland,10,,,,2,8,,176,NA,Mar 15
+Syria,9,,1,,,8,,05,  006,Mar 21
+Grenada,9,,,,,9,,80,NA,Mar 21
+Saint Lucia,9,,,,1,8,,49,NA,Mar 12
+Eswatini,9,,,,,9,,8,NA,Mar 13
+Guyana,8,,1,,,7,,10,  100,Mar 11
+GuineaBissau,8,6,,,,8,,4,NA,Mar 24
+Laos,8,,,,,8,,1,NA,Mar 23
+Libya,8,,,,,8,,1,NA,Mar 23
+Mozambique,8,,,,,8,,03,NA,Mar 21
+Seychelles,8,,,,,8,,81,NA,Mar 13
+Suriname,8,,,,,8,,14,NA,Mar 12
+Angola,7,,2,,,5,,02,  006,Mar 19
+Gabon,7,,1,,,6,,3,  040,Mar 12
+Zimbabwe,7,,1,,,6,,05,  007,Mar 19
+Antigua and Barbuda,7,,,,,7,,71,NA,Mar 12
+Saint Kitts and Nevis,7,5,,,,7,,132,NA,Mar 24
+Sudan,6,,2,1,,4,,01,  005,Mar 12
+Cabo Verde,6,,1,,,5,,11,  200,Mar 19
+Benin,6,,,,,6,,05,NA,Mar 15
+Vatican City,6,,,,,6,,7491,NA,Mar 05
+Sint Maarten,6,,,,,6,,140,NA,Mar 17
+Nepal,5,,,,1,4,,02,NA,Jan 23
+Chad,5,2,,,,5,,03,NA,Mar 18
+Fiji,5,,,,,5,,6,NA,Mar 18
+Mauritania,5,,,,2,3,,1,NA,Mar 12
+Montserrat,5,,,,,5,,1002,NA,Mar 17
+St Barth,5,,,,,5,,506,NA,Feb 29
+Turks and Caicos,5,1,,,,5,,129,NA,Mar 22
+Gambia,4,,1,,,3,,2,  040,Mar 16
+Nicaragua,4,,1,,,3,,06,  020,Mar 18
+Bhutan,4,,,,,4,,5,NA,Mar 05
+CAR,3,,,,,3,,06,NA,Mar 14
+Liberia,3,,,,,3,,06,NA,Mar 15
+Somalia,3,,,,,3,,02,NA,Mar 15
+MS Zaandam,2,,,,,2,,,NA,Mar 26
+Anguilla,2,,,,,2,,133,NA,Mar 25
+Belize,2,,,,,2,,5,NA,Mar 22
+British Virgin Islands,2,,,,,2,,66,NA,Mar 24
+Papua New Guinea,1,,,,,1,,01,NA,Mar 19
+St Vincent Grenadines,1,,,,1,0,,9,NA,Mar 10
+TimorLeste,1,,,,,1,,08,NA,Mar 20
+China,81470,31,3304,4,75700,2466,633,57,  200,Jan 10
