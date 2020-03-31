@@ -1,40 +1,40 @@
 country_region,case_type,case_num
-US,Confirmed,140886
-US,Deaths,2467
-US,Recovered,2665
-Italy,Confirmed,97689
-Italy,Deaths,10779
-Italy,Recovered,13030
-China,Confirmed,82122
-China,Deaths,3304
-China,Recovered,75582
-Spain,Confirmed,80110
-Spain,Deaths,6803
-Spain,Recovered,14709
-Germany,Confirmed,62095
-Germany,Deaths,533
-Germany,Recovered,9211
-France,Confirmed,40708
-France,Deaths,2611
-France,Recovered,7226
-Iran,Confirmed,38309
-Iran,Deaths,2640
-Iran,Recovered,12391
-United Kingdom,Confirmed,19780
-United Kingdom,Deaths,1231
-United Kingdom,Recovered,151
-Switzerland,Confirmed,14829
-Switzerland,Deaths,300
-Switzerland,Recovered,1595
-Netherlands,Confirmed,10930
-Netherlands,Deaths,772
+US,Confirmed,161807
+US,Deaths,2978
+US,Recovered,5644
+Italy,Confirmed,101739
+Italy,Deaths,11591
+Italy,Recovered,14620
+Spain,Confirmed,87956
+Spain,Deaths,7716
+Spain,Recovered,16780
+China,Confirmed,82198
+China,Deaths,3308
+China,Recovered,75923
+Germany,Confirmed,66885
+Germany,Deaths,645
+Germany,Recovered,13500
+France,Confirmed,45170
+France,Deaths,3030
+France,Recovered,7964
+Iran,Confirmed,41495
+Iran,Deaths,2757
+Iran,Recovered,13911
+United Kingdom,Confirmed,22453
+United Kingdom,Deaths,1411
+United Kingdom,Recovered,171
+Switzerland,Confirmed,15922
+Switzerland,Deaths,359
+Switzerland,Recovered,1823
+Belgium,Confirmed,11899
+Belgium,Deaths,513
+Belgium,Recovered,1527
+Netherlands,Confirmed,11817
+Netherlands,Deaths,865
 Netherlands,Recovered,253
-Belgium,Confirmed,10836
-Belgium,Deaths,431
-Belgium,Recovered,1359
-"Korea, South",Confirmed,9583
-"Korea, South",Deaths,152
-"Korea, South",Recovered,5033
-Turkey,Confirmed,9217
-Turkey,Deaths,131
-Turkey,Recovered,105
+Turkey,Confirmed,10827
+Turkey,Deaths,168
+Turkey,Recovered,162
+"Korea, South",Confirmed,9661
+"Korea, South",Deaths,158
+"Korea, South",Recovered,5228
