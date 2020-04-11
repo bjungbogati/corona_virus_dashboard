@@ -14,7 +14,13 @@ df <- df %>% janitor::clean_names()
 df <- df[-nrow(df),] # remove last row i.e total
 df <- df[-(1:8),]
 
+
+df <- df %>% filter(country_other != "Total:")
+
+
 tbl_df <- df %>% select(c("country_other", "total_cases", "total_deaths", "total_recovered"))
+
+
 
 df1 <- as_tibble(gsub("[[:punct:]]", "", as.matrix(df)))
 
