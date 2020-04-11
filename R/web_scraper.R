@@ -12,7 +12,7 @@ df <- df[[1]]
 df <- df %>% janitor::clean_names() 
 
 df <- df[-nrow(df),] # remove last row i.e total
-df <- df[-1,]
+df <- df[-(1:8),]
 
 tbl_df <- df %>% select(c("country_other", "total_cases", "total_deaths", "total_recovered"))
 
