@@ -89,7 +89,7 @@ map_corona <- leaflet(options = leafletOptions(attributionControl=F)) %>%
   addProviderTiles(providers$CartoDB.DarkMatter) %>% 
   addCircleMarkers(
     lng=latest_covid19$long, lat= latest_covid19$lat, 
-    radius = ifelse(latest_covid19$confirmed > 50, sqrt(latest_covid19$confirmed)/6, 
+    radius = ifelse(latest_covid19$confirmed > 50, sqrt(latest_covid19$confirmed)/10, 
                     ifelse(latest_covid19$confirmed > 10, 3, 2)),
     stroke = FALSE, fillOpacity = 0.5, label = con_text, color = "#e94f20",
     labelOptions = labelOptions(style = list("font-weight" = "normal", 
@@ -102,7 +102,7 @@ map_corona <- leaflet(options = leafletOptions(attributionControl=F)) %>%
    
     addCircleMarkers(
       lng= only_recov$long, lat= only_recov$lat,
-      radius = ifelse(only_recov$recovered > 50, sqrt(only_recov$recovered)/6,
+      radius = ifelse(only_recov$recovered > 50, sqrt(only_recov$recovered)/10,
                       ifelse(only_recov$recovered > 10, 3, 2)),
       stroke = FALSE, fillOpacity = 0.5, label = recov_text, color = "#6da700",
       labelOptions = labelOptions(style = list("font-weight" = "normal",
@@ -114,7 +114,7 @@ map_corona <- leaflet(options = leafletOptions(attributionControl=F)) %>%
     ) %>%
     addCircleMarkers(
     lng= only_deaths$long, lat= only_deaths$lat, 
-    radius = ifelse(only_deaths$deaths > 30, sqrt(only_deaths$deaths)/5, 
+    radius = ifelse(only_deaths$deaths > 30, sqrt(only_deaths$deaths)/10, 
                     ifelse(only_deaths$deaths > 5, 3, 2)),
     stroke = FALSE, fillOpacity = 0.5, label = deaths_text, color = "#bdbdbd",
     labelOptions = labelOptions(style = list("font-weight" = "normal", 
