@@ -1,0 +1,213 @@
+country_other,total_cases,new_cases,total_deaths,new_deaths,total_recovered,active_cases,serious_critical,tot_cases_1m_pop,deaths_1m_pop,total_tests,tests_1m_pop,continent
+USA,886709,267,50243,7,85922,750544,14997,2679,152,4775625,14428,North America
+Spain,219764,6740,22524,367,92355,104885,7705,4700,482,930230,19896,Europe
+Italy,189973,,25549,,57576,106848,2267,3142,423,1579909,26131,Europe
+France,158183,,21856,,42088,94239,5053,2423,335,463662,7103,Europe
+Germany,153393,264,5575,,106800,41018,2908,1831,67,2072669,24738,Europe
+UK,138078,,18738,,"NA",118996,1559,2034,276,583496,8595,Europe
+Turkey,101790,,2491,,18491,80808,1816,1207,30,791906,9390,Asia
+Iran,88194,1168,5574,93,66599,16021,3121,1050,66,399927,4761,Asia
+Russia,68622,5849,615,60,5568,62439,2300,470,4,2550000,17474,Europe
+Brazil,50230,738,3343,30,26573,20314,8318,236,16,291922,1373,South America
+Belgium,44293,1496,6679,189,10122,27492,970,3822,576,189067,16313,Europe
+Canada,42110,,2147,,14761,25202,557,1116,57,634917,16822,North America
+Netherlands,36535,806,4289,112,"NA",31996,1008,2132,250,187000,10913,Europe
+Switzerland,28677,181,1551,2,20600,6526,386,3313,179,235252,27182,Europe
+India,23502,463,722,1,5012,17768,,17,05,541789,393,Asia
+Portugal,22353,,820,,1201,20332,204,2192,80,315758,30967,Europe
+Peru,20914,,572,,7422,12920,396,634,17,185238,5618,South America
+Ireland,17607,,794,,9233,7580,147,3566,161,111584,22598,Europe
+Sweden,17567,812,2152,131,550,14865,533,1739,213,94500,9357,Europe
+Austria,15071,69,522,,11872,2677,169,1673,58,205835,22854,Europe
+Israel,14882,79,193,1,5685,9004,139,1719,22,240303,27763,Asia
+Saudi Arabia,13930,,121,,1925,11884,93,400,3,200000,5745,Asia
+Japan,12368,,328,,1494,10546,259,98,3,135983,1075,Asia
+Singapore,12075,897,12,,924,11139,26,2064,2,94796,16203,Asia
+Chile,11812,,168,,5804,5840,411,618,9,135147,7070,South America
+Mexico,11633,1089,1069,99,2627,7937,378,90,8,51297,398,North America
+Ecuador,11183,,560,,1328,9295,141,634,32,34840,1975,South America
+Pakistan,11155,98,237,2,2527,8391,111,50,1,131365,595,Asia
+Poland,10759,248,463,9,1944,8352,160,284,12,250719,6625,Europe
+S Korea,10708,6,240,,8501,1967,55,209,5,589520,11499,Asia
+Romania,10417,321,552,7,2817,7048,241,541,29,121602,6321,Europe
+UAE,8756,,56,,1637,7063,1,885,6,790000,79875,Asia
+Qatar,8525,761,10,,809,7706,72,2959,3,75888,26340,Asia
+Indonesia,8211,436,689,42,1002,6520,,30,3,64054,234,Asia
+Denmark,8210,137,403,9,5526,2281,69,1417,70,125329,21638,Europe
+Belarus,8022,,60,,938,7024,92,849,6,122543,12968,Europe
+Ukraine,7647,477,193,6,601,6853,45,175,4,77752,1778,Europe
+Norway,7401,,195,1,32,7174,53,1365,36,155125,28614,Europe
+Serbia,7276,,139,,1063,6074,96,833,16,51324,5874,Europe
+Philippines,7192,211,477,15,762,5953,1,66,4,76956,702,Asia
+Czechia,7188,1,213,3,2186,4789,76,671,20,203622,19014,Europe
+Australia,6675,8,79,4,5136,1460,43,262,3,482371,18917,AustraliaOceania
+Malaysia,5691,88,96,1,3663,1932,41,176,3,121722,3761,Asia
+Dominican Republic,5543,,265,,674,4604,135,511,24,18261,1683,North America
+Panama,5166,174,146,2,271,4749,86,1197,34,23534,5454,North America
+Bangladesh,4689,503,131,4,112,4446,1,28,08,39476,240,Asia
+Colombia,4561,,215,,927,3419,98,90,4,71500,1405,South America
+Finland,4395,111,172,,2000,2223,60,793,31,71000,12814,Europe
+South Africa,3953,,75,,1473,2405,36,67,1,143570,2421,Africa
+Egypt,3891,,287,,1004,2600,,38,3,90000,879,Africa
+Morocco,3692,124,155,,478,3059,1,100,4,22816,618,Africa
+Luxembourg,3665,,83,,728,2854,27,5855,133,36891,58933,Europe
+Argentina,3435,,166,1,919,2350,123,76,4,41786,925,South America
+Algeria,3007,,407,,1355,1245,40,69,9,6500,148,Africa
+Moldova,2926,,80,,755,2091,212,725,20,11763,2916,Europe
+Thailand,2854,15,50,,2490,314,61,41,07,142589,2043,Asia
+Kuwait,2614,215,15,1,613,1986,60,612,4,,,Asia
+Greece,2463,,127,2,577,1759,52,236,12,59241,5684,Europe
+Hungary,2383,99,250,11,401,1732,61,247,26,58251,6030,Europe
+Kazakhstan,2334,45,24,4,602,1708,29,124,1,153492,8175,Asia
+Bahrain,2217,,8,,1082,1127,2,1303,5,100031,58787,Asia
+Croatia,2009,28,51,1,982,976,19,489,12,30213,7360,Europe
+Oman,1790,74,9,,325,1456,3,351,2,,,Asia
+Iceland,1789,,10,,1509,270,5,5243,29,45093,132143,Europe
+Uzbekistan,1778,20,8,1,598,1172,8,53,02,210000,6274,Asia
+Iraq,1677,,83,,1171,423,,42,2,64882,1613,Asia
+Estonia,1605,13,46,1,206,1353,6,1210,35,46281,34889,Europe
+Armenia,1596,73,27,3,728,841,10,539,9,16552,5586,Asia
+Azerbaijan,1592,44,21,1,1013,558,14,157,2,114410,11284,Asia
+New Zealand,1456,5,17,1,1095,344,1,302,4,108238,22446,AustraliaOceania
+Cameroon,1430,96,43,,668,719,20,54,2,,,Africa
+Bosnia and Herzegovina,1421,8,55,1,538,828,4,433,17,21432,6533,Europe
+Lithuania,1410,12,40,,430,940,17,518,15,90992,33425,Europe
+Slovenia,1373,7,80,1,211,1082,23,660,38,45703,21984,Europe
+Slovakia,1360,35,17,2,355,988,8,249,3,61261,11221,Europe
+Afghanistan,1330,51,42,,179,1109,7,34,1,6422,165,Asia
+North Macedonia,1300,,56,,301,943,14,624,27,13649,6551,Europe
+Ghana,1279,125,10,1,134,1135,4,41,03,68591,2207,Africa
+Cuba,1235,,43,,365,827,14,109,4,34243,3023,North America
+Bulgaria,1171,74,52,,193,926,37,169,7,27000,3886,Europe
+Hong Kong,1036,,4,,699,333,9,138,05,131786,17579,Asia
+Ivory Coast,1004,,14,,359,631,,38,05,,,Africa
+Djibouti,999,13,2,,330,667,,1011,2,11090,11225,Africa
+Nigeria,981,,31,,197,753,2,5,02,8003,39,Africa
+Tunisia,918,,38,,190,690,32,78,3,19411,1642,Africa
+Guinea,862,,6,,170,686,,66,05,,,Africa
+Cyprus,795,,13,,98,684,15,658,11,40745,33747,Asia
+Latvia,784,6,12,1,133,639,6,416,6,43080,22840,Europe
+Andorra,723,,37,,333,353,17,9357,479,1673,21653,Europe
+Diamond Princess,712,,13,,645,54,4,,,,,
+Bolivia,703,31,43,3,44,616,3,60,4,4420,379,South America
+Lebanon,696,8,22,,140,534,46,102,3,25337,3712,Asia
+Costa Rica,686,,6,,196,484,8,135,1,12073,2370,North America
+Albania,678,15,27,,394,257,4,236,9,6509,2262,Europe
+Niger,671,,24,,256,391,,28,10,4832,200,Africa
+Kyrgyzstan,656,25,8,,322,326,11,101,1,39615,6072,Asia
+Burkina Faso,616,,41,,410,165,,29,2,,,Africa
+Honduras,562,43,47,,50,465,10,57,5,3107,314,North America
+Uruguay,557,8,12,,354,191,10,160,3,15142,4359,South America
+Senegal,545,66,6,,262,277,1,33,04,466,28,Africa
+Channel Islands,521,,29,,295,197,,2997,167,3320,19095,Europe
+San Marino,501,,40,,63,398,3,14765,1179,1929,56851,Europe
+Palestine,480,,4,,92,384,,94,08,27000,5293,Asia
+Malta,447,2,3,,223,221,2,1012,7,27422,62105,Europe
+Jordan,437,,7,,318,112,5,43,07,36000,3528,Asia
+Georgia,431,6,5,,114,312,6,108,1,8375,2099,Asia
+Taiwan,428,1,6,,264,158,,18,03,59026,2478,Asia
+Réunion,412,,,,238,174,2,460,,,,Africa
+DRC,394,17,25,,48,321,,4,03,,,Africa
+Guatemala,384,42,11,1,30,343,5,21,06,7200,402,North America
+Sri Lanka,379,11,7,,107,265,2,18,03,13142,614,Asia
+Mayotte,354,28,4,,144,206,4,1298,15,2200,8064,Africa
+Kenya,336,16,14,,89,233,2,6,03,16738,311,Africa
+Mauritius,331,,9,,266,56,3,260,7,12835,10092,Africa
+Somalia,328,,16,,8,304,2,21,1,,,Africa
+Montenegro,319,3,5,,123,191,7,508,8,5085,8096,Europe
+Venezuela,311,13,10,,126,175,4,11,04,347236,12211,South America
+Mali,309,,21,,77,211,,15,1,2023,100,Africa
+Isle of Man,307,,16,,221,70,20,3610,188,2674,31447,Europe
+Tanzania,284,,10,,48,226,7,5,02,,,Africa
+Vietnam,270,2,,,225,45,8,3,,206253,2119,Asia
+El Salvador,261,11,8,,72,181,2,40,1,16418,2531,North America
+Jamaica,257,5,6,,28,223,,87,2,2213,747,North America
+Paraguay,220,7,9,,70,141,1,31,1,6917,970,South America
+Faeroe Islands,187,,,,178,9,,3827,,6458,132165,Europe
+Congo,186,,6,,16,164,,34,1,,,Africa
+Sudan,174,12,16,3,14,144,,4,04,,,Africa
+Martinique,170,6,14,,77,79,6,453,37,,,North America
+Gabon,167,,2,,24,141,1,75,09,572,257,Africa
+Rwanda,154,,,,87,67,,12,,6959,537,Africa
+Guadeloupe,149,1,12,,82,55,11,372,30,,,North America
+Myanmar,139,7,5,,9,125,,3,009,5775,106,Asia
+Brunei,138,,1,,120,17,2,315,2,12770,29190,Asia
+Gibraltar,133,,,,129,4,,3948,,2062,61203,Europe
+Cambodia,122,,,,110,12,1,7,,5768,345,Asia
+Madagascar,122,1,,,61,61,1,4,,2357,85,Africa
+Liberia,117,16,8,,25,84,,23,2,,,Africa
+Ethiopia,117,1,3,,25,89,,1,003,11669,102,Africa
+Maldives,116,8,,,16,100,2,215,,5296,9798,Asia
+Trinidad and Tobago,115,,8,,48,59,,82,6,1473,1053,North America
+French Guiana,107,,1,,84,22,1,358,3,,,South America
+Aruba,100,,2,,68,30,4,937,19,1535,14377,North America
+Bermuda,99,,5,,39,55,10,1590,80,949,15238,North America
+Monaco,94,,4,,35,55,2,2395,102,,,Europe
+Togo,90,2,6,,59,25,,11,07,4733,572,Africa
+Cabo Verde,88,6,1,,1,86,,158,2,,,Africa
+Equatorial Guinea,84,,1,,7,76,,60,07,854,609,Africa
+Sierra Leone,82,18,2,1,10,70,,10,03,,,Africa
+Liechtenstein,81,,1,,55,25,,2124,26,900,23605,Europe
+Barbados,76,,6,,30,40,4,264,21,1222,4252,North America
+Zambia,76,,3,,37,36,1,4,02,2586,141,Africa
+Uganda,74,,,,46,28,,2,,17388,380,Africa
+Sint Maarten,73,,12,,22,39,8,1703,280,266,6204,North America
+Bahamas,72,,11,,14,47,1,183,28,,,North America
+Haiti,72,,5,,2,65,,6,04,690,61,North America
+Guyana,70,,7,,12,51,5,89,9,375,477,South America
+Cayman Islands,66,,1,,7,58,3,1004,15,778,11838,North America
+Libya,60,,2,,18,40,,9,03,1337,195,Africa
+French Polynesia,57,,,,36,21,1,203,,1803,6418,AustraliaOceania
+Benin,54,,1,,27,26,,4,008,,,Africa
+GuineaBissau,50,,,,3,47,,25,,1500,762,Africa
+Nepal,48,,,,10,38,,2,,9200,316,Asia
+Mozambique,46,,,,12,34,,1,,1325,42,Africa
+Macao,45,,,,27,18,1,69,,,,Asia
+Syria,42,,3,,6,33,,2,02,,,Asia
+Chad,40,7,,,8,32,,2,,,,Africa
+Eritrea,39,,,,11,28,,11,,,,Africa
+Saint Martin,38,,2,,20,16,3,983,52,,,North America
+Eswatini,36,5,1,,10,25,,31,09,714,615,Africa
+Mongolia,36,1,,,9,27,,11,,7234,2207,Asia
+Malawi,33,,3,,3,27,1,2,02,519,27,Africa
+Zimbabwe,29,1,4,,2,23,,2,03,5450,367,Africa
+Angola,25,,2,,6,17,,08,006,,,Africa
+Antigua and Barbuda,24,,3,,10,11,1,245,31,108,1103,North America
+TimorLeste,23,,,,1,22,,17,,322,244,Asia
+Botswana,22,,1,,,21,,9,04,4432,1885,Africa
+Laos,19,,,,4,15,,3,,1461,201,Asia
+Belize,18,,2,,5,11,1,45,5,816,2052,North America
+Fiji,18,,,,10,8,,20,,900,1004,AustraliaOceania
+New Caledonia,18,,,,17,1,1,63,,3952,13842,AustraliaOceania
+CAR,16,,,,10,6,,3,,,,Africa
+Dominica,16,,,,9,7,,222,,377,5237,North America
+Namibia,16,,,,7,9,,6,,590,232,Africa
+Grenada,15,,,,7,8,4,133,,92,818,North America
+Saint Kitts and Nevis,15,,,,2,13,,282,,260,4887,North America
+Saint Lucia,15,,,,15,0,,82,,364,1982,North America
+Curaçao,14,,1,,11,2,,85,6,304,1853,North America
+St Vincent Grenadines,14,1,,,5,9,,126,,108,973,North America
+Falkland Islands,12,,,,11,1,,3448,,337,96839,South America
+Nicaragua,11,,3,,7,1,,2,05,,,North America
+Burundi,11,,1,,4,6,,09,008,284,24,Africa
+Turks and Caicos,11,,1,,4,6,,284,26,83,2144,North America
+Greenland,11,,,,11,0,,194,,1150,20257,North America
+Montserrat,11,,,,2,9,1,2204,,36,7212,North America
+Seychelles,11,,,,6,5,,112,,,,Africa
+Gambia,10,,1,,2,7,,4,04,316,131,Africa
+Suriname,10,,1,,6,3,,17,2,404,689,South America
+MS Zaandam,9,,2,,,7,,,,,,
+Vatican City,9,,,,2,7,,11236,,,,Europe
+Papua New Guinea,8,,,,,8,,09,,604,68,AustraliaOceania
+Mauritania,7,,1,,6,0,,2,02,969,208,Africa
+Bhutan,7,,,,3,4,,9,,8953,11603,Asia
+St Barth,6,,,,6,0,,607,,,,North America
+Western Sahara,6,,,,5,1,,10,,,,Africa
+British Virgin Islands,5,,1,,3,1,,165,33,,,North America
+Caribbean Netherlands,5,,,,,5,,191,,110,4195,North America
+South Sudan,5,1,,,,5,,04,,,,Africa
+Sao Tome and Principe,4,,,,,4,,18,,19,87,Africa
+Anguilla,3,,,,1,2,,200,,,,North America
+Saint Pierre Miquelon,1,,,,,1,,173,,,,North America
+Yemen,1,,,,1,0,,003,,120,4,Asia
+China,82804,6,4632,,77257,915,57,58,3,,,Asia
