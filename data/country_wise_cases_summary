@@ -2,9 +2,9 @@ country_region,case_type,case_num
 US,Confirmed,1039909
 US,Deaths,60967
 US,Recovered,120720
-Spain,Confirmed,236899
+Spain,Confirmed,212917
 Spain,Deaths,24275
-Spain,Recovered,132929
+Spain,Recovered,108947
 Italy,Confirmed,203591
 Italy,Deaths,27682
 Italy,Recovered,71252
