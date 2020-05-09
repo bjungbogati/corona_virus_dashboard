@@ -1,40 +1,40 @@
 country_region,case_type,case_num
-US,Confirmed,1257023
-US,Deaths,75662
-US,Recovered,195036
-Spain,Confirmed,221447
-Spain,Deaths,26070
-Spain,Recovered,128511
-Italy,Confirmed,215858
-Italy,Deaths,29958
-Italy,Recovered,96276
-United Kingdom,Confirmed,207977
-United Kingdom,Deaths,30689
-United Kingdom,Recovered,970
-Russia,Confirmed,177160
-Russia,Deaths,1625
-Russia,Recovered,23803
-France,Confirmed,174918
-France,Deaths,25990
-France,Recovered,55191
-Germany,Confirmed,169430
-Germany,Deaths,7392
+US,Confirmed,1283929
+US,Deaths,77180
+US,Recovered,198993
+Spain,Confirmed,222857
+Spain,Deaths,26299
+Spain,Recovered,131148
+Italy,Confirmed,217185
+Italy,Deaths,30201
+Italy,Recovered,99023
+United Kingdom,Confirmed,212629
+United Kingdom,Deaths,31316
+United Kingdom,Recovered,997
+Russia,Confirmed,187859
+Russia,Deaths,1723
+Russia,Recovered,26608
+France,Confirmed,176202
+France,Deaths,26233
+France,Recovered,55892
+Germany,Confirmed,170588
+Germany,Deaths,7510
 Germany,Recovered,141700
-Brazil,Confirmed,135773
-Brazil,Deaths,9190
-Brazil,Recovered,55350
-Turkey,Confirmed,133721
-Turkey,Deaths,3641
-Turkey,Recovered,82984
-Iran,Confirmed,103135
-Iran,Deaths,6486
-Iran,Recovered,82744
-China,Confirmed,83975
+Brazil,Confirmed,146894
+Brazil,Deaths,10017
+Brazil,Recovered,59297
+Turkey,Confirmed,135569
+Turkey,Deaths,3689
+Turkey,Recovered,86396
+Iran,Confirmed,104691
+Iran,Deaths,6541
+Iran,Recovered,83837
+China,Confirmed,83976
 China,Deaths,4637
-China,Recovered,78977
-Peru,Confirmed,58526
-Peru,Deaths,1627
-Peru,Recovered,18388
-India,Confirmed,56351
-India,Deaths,1889
-India,Recovered,16776
+China,Recovered,78993
+Peru,Confirmed,61847
+Peru,Deaths,1714
+Peru,Recovered,19012
+India,Confirmed,59695
+India,Deaths,1985
+India,Recovered,17887
