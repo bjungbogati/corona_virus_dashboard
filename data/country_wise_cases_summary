@@ -1,6 +1,6 @@
 country_region,case_type,case_num
-US,Confirmed,1811360
-US,Deaths,105165
+US,Confirmed,1811020
+US,Deaths,105149
 US,Recovered,458231
 Brazil,Confirmed,526447
 Brazil,Deaths,29937
