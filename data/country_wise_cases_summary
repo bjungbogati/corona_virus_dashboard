@@ -20,6 +20,9 @@ Italy,Recovered,160938
 India,Confirmed,216824
 India,Deaths,6088
 India,Recovered,104071
+France,Confirmed,192330
+France,Deaths,29024
+France,Recovered,69573
 Germany,Confirmed,184121
 Germany,Deaths,8602
 Germany,Recovered,167453
@@ -32,9 +35,6 @@ Turkey,Recovered,130852
 Iran,Confirmed,160696
 Iran,Deaths,8012
 Iran,Recovered,125206
-France,Confirmed,114400
-France,Deaths,29024
-France,Recovered,69573
 Chile,Confirmed,113628
 Chile,Deaths,1275
 Chile,Recovered,21605
