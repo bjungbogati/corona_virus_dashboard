@@ -1,6 +1,6 @@
 country_region,case_type,case_num
-US,Confirmed,1979411
-US,Deaths,111989
+US,Confirmed,1973230
+US,Deaths,111694
 US,Recovered,524855
 Brazil,Confirmed,739503
 Brazil,Deaths,38406
@@ -21,7 +21,7 @@ Italy,Confirmed,235561
 Italy,Deaths,34043
 Italy,Recovered,168646
 Peru,Confirmed,203736
-Peru,Deaths,203736
+Peru,Deaths,5738
 Peru,Recovered,92929
 France,Confirmed,191523
 France,Deaths,29299
