@@ -89,7 +89,7 @@ map_corona <- leaflet(options = leafletOptions(attributionControl=F)) %>%
   addProviderTiles(providers$CartoDB.DarkMatter) %>% 
   addCircleMarkers(
     lng=latest_covid19$long, lat= latest_covid19$lat, 
-    radius = ifelse(latest_covid19$confirmed > 50, sqrt(latest_covid19$confirmed)/10, 
+    radius = ifelse(latest_covid19$confirmed > 50, sqrt(latest_covid19$confirmed)/1000, 
                     ifelse(latest_covid19$confirmed > 10, 3, 2)),
     stroke = FALSE, fillOpacity = 0.5, label = con_text, color = "#e94f20",
     labelOptions = labelOptions(style = list("font-weight" = "normal", 
