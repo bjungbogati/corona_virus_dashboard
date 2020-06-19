@@ -24,7 +24,7 @@ source("R/utils.R")
 ```{r home, child = 'rmd/home.Rmd'}
 ```
 
-<!-- Trend -->
+<!--  Trend  -->
 
 ```{r trend, child = 'rmd/trend.Rmd'}
 ```
