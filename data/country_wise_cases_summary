@@ -1,4 +1,5 @@
 country_region,case_type,case_num
+<<<<<<< HEAD
 US,Confirmed,1039909
 US,Deaths,60967
 US,Recovered,120720
@@ -38,3 +39,44 @@ Belgium,Recovered,11283
 Netherlands,Confirmed,38998
 Netherlands,Deaths,4727
 Netherlands,Recovered,119
+=======
+US,Confirmed,2191052
+US,Deaths,118434
+US,Recovered,599115
+Brazil,Confirmed,978142
+Brazil,Deaths,47748
+Brazil,Recovered,534580
+Russia,Confirmed,560321
+Russia,Deaths,7650
+Russia,Recovered,313409
+India,Confirmed,380532
+India,Deaths,12573
+India,Recovered,204711
+United Kingdom,Confirmed,301935
+United Kingdom,Deaths,42373
+United Kingdom,Recovered,1313
+Spain,Confirmed,245268
+Spain,Deaths,27136
+Spain,Recovered,150376
+Peru,Confirmed,244388
+Peru,Deaths,7461
+Peru,Recovered,131190
+Italy,Confirmed,238159
+Italy,Deaths,34514
+Italy,Recovered,180544
+Chile,Confirmed,225103
+Chile,Deaths,3841
+Chile,Recovered,186441
+Iran,Confirmed,197647
+Iran,Deaths,9272
+Iran,Recovered,156991
+France,Confirmed,195272
+France,Deaths,29606
+France,Recovered,74011
+Germany,Confirmed,189817
+Germany,Deaths,8875
+Germany,Recovered,173847
+Turkey,Confirmed,184031
+Turkey,Deaths,4882
+Turkey,Recovered,156022
+>>>>>>> 1dcc8df92f3aa2f76944ef379883daf753b9210a
