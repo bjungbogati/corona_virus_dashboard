@@ -1,0 +1,40 @@
+country_region,case_type,case_num
+US,Confirmed,2382327
+US,Deaths,121985
+US,Recovered,656161
+Brazil,Confirmed,1188631
+Brazil,Deaths,53830
+Brazil,Recovered,660469
+Russia,Confirmed,606043
+Russia,Deaths,8503
+Russia,Recovered,368222
+India,Confirmed,473105
+India,Deaths,14894
+India,Recovered,271697
+United Kingdom,Confirmed,308337
+United Kingdom,Deaths,43165
+United Kingdom,Recovered,1345
+Peru,Confirmed,264689
+Peru,Deaths,8586
+Peru,Recovered,151589
+Chile,Confirmed,254416
+Chile,Deaths,4731
+Chile,Recovered,215093
+Spain,Confirmed,247086
+Spain,Deaths,28327
+Spain,Recovered,150376
+Italy,Confirmed,239410
+Italy,Deaths,34644
+Italy,Recovered,186111
+Iran,Confirmed,212501
+Iran,Deaths,9996
+Iran,Recovered,172096
+France,Confirmed,197885
+France,Deaths,29734
+France,Recovered,75251
+Mexico,Confirmed,196847
+Mexico,Deaths,24324
+Mexico,Recovered,148487
+Pakistan,Confirmed,192970
+Pakistan,Deaths,3903
+Pakistan,Recovered,81307
