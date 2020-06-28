@@ -1,40 +1,40 @@
 country_region,case_type,case_num
-US,Confirmed,2467554
-US,Deaths,125039
-US,Recovered,670809
-Brazil,Confirmed,1274974
-Brazil,Deaths,55961
-Brazil,Recovered,702399
-Russia,Confirmed,619936
-Russia,Deaths,8770
-Russia,Recovered,383524
-India,Confirmed,508953
-India,Deaths,15685
-India,Recovered,295881
-United Kingdom,Confirmed,310836
-United Kingdom,Deaths,43498
-United Kingdom,Recovered,1363
-Peru,Confirmed,272364
-Peru,Deaths,8939
-Peru,Recovered,159806
-Chile,Confirmed,263360
-Chile,Deaths,5068
-Chile,Recovered,223431
-Spain,Confirmed,247905
-Spain,Deaths,28338
+US,Confirmed,2510151
+US,Deaths,125539
+US,Recovered,679308
+Brazil,Confirmed,1313667
+Brazil,Deaths,57070
+Brazil,Recovered,727715
+Russia,Confirmed,626779
+Russia,Deaths,8958
+Russia,Recovered,392703
+India,Confirmed,528859
+India,Deaths,16095
+India,Recovered,309713
+United Kingdom,Confirmed,311727
+United Kingdom,Deaths,43598
+United Kingdom,Recovered,1364
+Peru,Confirmed,275989
+Peru,Deaths,9135
+Peru,Recovered,164024
+Chile,Confirmed,267766
+Chile,Deaths,5347
+Chile,Recovered,228055
+Spain,Confirmed,248469
+Spain,Deaths,28341
 Spain,Recovered,150376
-Italy,Confirmed,239961
-Italy,Deaths,34708
-Italy,Recovered,187615
-Iran,Confirmed,217724
-Iran,Deaths,10239
-Iran,Recovered,177852
-Mexico,Confirmed,208392
-Mexico,Deaths,25779
-Mexico,Recovered,156827
+Italy,Confirmed,240136
+Italy,Deaths,34716
+Italy,Recovered,188584
+Iran,Confirmed,220180
+Iran,Deaths,10364
+Iran,Recovered,180661
+Mexico,Confirmed,212802
+Mexico,Deaths,26381
+Mexico,Recovered,160721
+Pakistan,Confirmed,202955
+Pakistan,Deaths,4118
+Pakistan,Recovered,92624
 France,Confirmed,199473
 France,Deaths,29781
 France,Recovered,75773
-Pakistan,Confirmed,198883
-Pakistan,Deaths,4035
-Pakistan,Recovered,86906
