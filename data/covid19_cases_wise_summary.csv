@@ -1,8 +1,8 @@
 case_type,case_number
-confirmed,15745511
-deaths,638138
-recovered,9393691
-new_confirmed,103246
-new_deaths,2463
-active_cases,5053730
-serious_cases,66227
+confirmed,15802606
+deaths,639215
+recovered,9424876
+new_confirmed,160341
+new_deaths,3540
+active_cases,5075666
+serious_cases,66231
