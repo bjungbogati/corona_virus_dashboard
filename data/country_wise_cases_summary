@@ -1,5 +1,5 @@
 country_region,case_type,case_num
-US,Confirmed,4494601
+US,Confirmed,4495015
 US,Deaths,152055
 US,Recovered,1414155
 Brazil,Confirmed,2610102
@@ -29,12 +29,12 @@ United Kingdom,Recovered,1438
 Iran,Confirmed,301530
 Iran,Deaths,16569
 Iran,Recovered,261200
+Colombia,Confirmed,286020
+Colombia,Deaths,9810
+Colombia,Recovered,148695
 Spain,Confirmed,285430
 Spain,Deaths,28443
 Spain,Recovered,150376
 Pakistan,Confirmed,277402
 Pakistan,Deaths,5924
 Pakistan,Recovered,246131
-Colombia,Confirmed,276055
-Colombia,Deaths,9808
-Colombia,Recovered,148692
