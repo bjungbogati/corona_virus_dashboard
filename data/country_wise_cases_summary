@@ -2,8 +2,8 @@ country_region,case_type,case_num
 US,Confirmed,5141208
 US,Deaths,164537
 US,Recovered,1714960
-Brazil,Confirmed,3057470
-Brazil,Deaths,101752
+Brazil,Confirmed,3109630
+Brazil,Deaths,103026
 Brazil,Recovered,2449338
 India,Confirmed,2329638
 India,Deaths,46091
@@ -17,8 +17,8 @@ South Africa,Recovered,426125
 Mexico,Confirmed,492522
 Mexico,Deaths,53929
 Mexico,Recovered,397278
-Peru,Confirmed,483133
-Peru,Deaths,21276
+Peru,Confirmed,489680
+Peru,Deaths,21501
 Peru,Recovered,329404
 Colombia,Confirmed,410453
 Colombia,Deaths,13475
