@@ -1,40 +1,40 @@
 country_region,case_type,case_num
-US,Confirmed,5867785
-US,Deaths,180824
-US,Recovered,2101326
-Brazil,Confirmed,3761391
-Brazil,Deaths,118649
-Brazil,Recovered,3122846
-India,Confirmed,3387500
-India,Deaths,61529
-India,Recovered,2583948
-Russia,Confirmed,972972
-Russia,Deaths,16758
-Russia,Recovered,790629
-South Africa,Confirmed,618286
-South Africa,Deaths,13628
-South Africa,Recovered,531338
-Peru,Confirmed,613378
-Peru,Deaths,28124
-Peru,Recovered,421877
-Colombia,Confirmed,581995
-Colombia,Deaths,18467
-Colombia,Recovered,417781
-Mexico,Confirmed,579914
-Mexico,Deaths,62594
-Mexico,Recovered,475532
-Spain,Confirmed,429507
-Spain,Deaths,28996
+US,Confirmed,5913941
+US,Deaths,181800
+US,Recovered,2118367
+Brazil,Confirmed,3804803
+Brazil,Deaths,119504
+Brazil,Recovered,3158783
+India,Confirmed,3463972
+India,Deaths,62550
+India,Recovered,2648998
+Russia,Confirmed,977730
+Russia,Deaths,16866
+Russia,Recovered,796498
+Peru,Confirmed,621997
+Peru,Deaths,28277
+Peru,Recovered,429662
+South Africa,Confirmed,620132
+South Africa,Deaths,13743
+South Africa,Recovered,533935
+Colombia,Confirmed,590492
+Colombia,Deaths,18766
+Colombia,Recovered,429608
+Mexico,Confirmed,585738
+Mexico,Deaths,63146
+Mexico,Recovered,479770
+Spain,Confirmed,439286
+Spain,Deaths,29011
 Spain,Recovered,150376
-Chile,Confirmed,404102
-Chile,Deaths,11072
-Chile,Recovered,377922
-Argentina,Confirmed,380292
-Argentina,Deaths,8050
-Argentina,Recovered,274458
-Iran,Confirmed,367796
-Iran,Deaths,21137
-Iran,Recovered,316638
-United Kingdom,Confirmed,332509
-United Kingdom,Deaths,41564
-United Kingdom,Recovered,1564
+Chile,Confirmed,405972
+Chile,Deaths,11132
+Chile,Recovered,379452
+Argentina,Confirmed,392009
+Argentina,Deaths,8271
+Argentina,Recovered,280165
+Iran,Confirmed,369911
+Iran,Deaths,21249
+Iran,Recovered,318270
+United Kingdom,Confirmed,333806
+United Kingdom,Deaths,41573
+United Kingdom,Recovered,1615
