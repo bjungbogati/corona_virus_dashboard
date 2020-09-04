@@ -1,40 +1,40 @@
 country_region,case_type,case_num
-US,Confirmed,6113510
-US,Deaths,185720
-US,Recovered,2231757
-Brazil,Confirmed,3997865
-Brazil,Deaths,123780
-Brazil,Recovered,3387309
-India,Confirmed,3853406
-India,Deaths,67376
-India,Recovered,2970492
-Russia,Confirmed,1001965
-Russia,Deaths,17365
-Russia,Recovered,819043
+US,Confirmed,6150016
+US,Deaths,186790
+US,Recovered,2266957
+Brazil,Confirmed,4041638
+Brazil,Deaths,124614
+Brazil,Recovered,3429435
+India,Confirmed,3936747
+India,Deaths,68472
+India,Recovered,3037151
+Russia,Confirmed,1006923
+Russia,Deaths,17479
+Russia,Recovered,824783
 Peru,Confirmed,657129
 Peru,Deaths,29068
 Peru,Recovered,480177
-Colombia,Confirmed,633321
-Colombia,Deaths,20345
-Colombia,Recovered,479567
-South Africa,Confirmed,630595
-South Africa,Deaths,14389
-South Africa,Recovered,553456
-Mexico,Confirmed,610957
-Mexico,Deaths,65816
-Mexico,Recovered,504541
-Spain,Confirmed,479554
-Spain,Deaths,29194
+Colombia,Confirmed,641574
+Colombia,Deaths,20618
+Colombia,Recovered,489151
+South Africa,Confirmed,633015
+South Africa,Deaths,14563
+South Africa,Recovered,554887
+Mexico,Confirmed,616894
+Mexico,Deaths,66329
+Mexico,Recovered,510626
+Spain,Confirmed,488513
+Spain,Deaths,29234
 Spain,Recovered,150376
-Argentina,Confirmed,439172
-Argentina,Deaths,9118
-Argentina,Recovered,315530
-Chile,Confirmed,414739
-Chile,Deaths,11344
-Chile,Recovered,387683
-Iran,Confirmed,378752
-Iran,Deaths,21797
-Iran,Recovered,326801
-United Kingdom,Confirmed,340929
-United Kingdom,Deaths,41602
-United Kingdom,Recovered,1742
+Argentina,Confirmed,451198
+Argentina,Deaths,9361
+Argentina,Recovered,322461
+Chile,Confirmed,416501
+Chile,Deaths,11422
+Chile,Recovered,389409
+Iran,Confirmed,380746
+Iran,Deaths,21926
+Iran,Recovered,328595
+United Kingdom,Confirmed,342708
+United Kingdom,Deaths,41616
+United Kingdom,Recovered,1750
