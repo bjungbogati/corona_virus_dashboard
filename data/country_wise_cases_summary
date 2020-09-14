@@ -1,40 +1,40 @@
 country_region,case_type,case_num
-US,Confirmed,6485123
-US,Deaths,193693
-US,Recovered,2434658
+US,Confirmed,6519573
+US,Deaths,194071
+US,Recovered,2451406
 India,Confirmed,4754356
 India,Deaths,78586
 India,Recovered,3702595
-Brazil,Confirmed,4315687
-Brazil,Deaths,131210
+Brazil,Confirmed,4330455
+Brazil,Deaths,131625
 Brazil,Recovered,3723206
-Russia,Confirmed,1053663
-Russia,Deaths,18426
-Russia,Recovered,871000
-Peru,Confirmed,716670
-Peru,Deaths,30470
+Russia,Confirmed,1059024
+Russia,Deaths,18517
+Russia,Recovered,873684
+Peru,Confirmed,722832
+Peru,Deaths,30526
 Peru,Recovered,559321
-Colombia,Confirmed,708964
-Colombia,Deaths,22734
-Colombia,Recovered,592820
-Mexico,Confirmed,663973
-Mexico,Deaths,70604
-Mexico,Recovered,551113
-South Africa,Confirmed,648214
-South Africa,Deaths,15427
-South Africa,Recovered,576423
+Colombia,Confirmed,716319
+Colombia,Deaths,22924
+Colombia,Recovered,599385
+Mexico,Confirmed,668381
+Mexico,Deaths,70821
+Mexico,Recovered,557381
+South Africa,Confirmed,649793
+South Africa,Deaths,15447
+South Africa,Recovered,577906
 Spain,Confirmed,566326
 Spain,Deaths,29747
 Spain,Recovered,150376
-Argentina,Confirmed,546481
-Argentina,Deaths,11263
-Argentina,Recovered,409771
-Chile,Confirmed,432666
-Chile,Deaths,11895
-Chile,Recovered,404919
-France,Confirmed,402811
-France,Deaths,30902
+Argentina,Confirmed,555537
+Argentina,Deaths,11352
+Argentina,Recovered,419513
+Chile,Confirmed,434748
+Chile,Deaths,11949
+Chile,Recovered,406326
+France,Confirmed,402893
+France,Deaths,30903
 France,Recovered,90445
-Iran,Confirmed,399940
-Iran,Deaths,23029
-Iran,Recovered,344516
+Iran,Confirmed,402029
+Iran,Deaths,23157
+Iran,Recovered,346242
