@@ -1,6 +1,6 @@
 country_region,case_type,case_num
-US,Confirmed,6605733
-US,Deaths,195915
+US,Confirmed,6593269
+US,Deaths,195786
 US,Recovered,2495127
 India,Confirmed,5020359
 India,Deaths,82066
