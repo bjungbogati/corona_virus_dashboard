@@ -1,40 +1,40 @@
 country_region,case_type,case_num
-US,Confirmed,6856884
-US,Deaths,199865
-US,Recovered,2615949
-India,Confirmed,5562663
-India,Deaths,88935
-India,Recovered,4497867
-Brazil,Confirmed,4558040
-Brazil,Deaths,137272
-Brazil,Recovered,3993432
-Russia,Confirmed,1105048
-Russia,Deaths,19420
-Russia,Recovered,909026
-Colombia,Confirmed,770435
-Colombia,Deaths,24397
-Colombia,Recovered,640900
-Peru,Confirmed,768895
-Peru,Deaths,31369
-Peru,Recovered,607837
-Mexico,Confirmed,700580
-Mexico,Deaths,73697
-Mexico,Recovered,596317
-Spain,Confirmed,671468
-Spain,Deaths,30663
+US,Confirmed,7332200
+US,Deaths,208695
+US,Recovered,2873369
+India,Confirmed,6473544
+India,Deaths,100842
+India,Recovered,5427706
+Brazil,Confirmed,4847092
+Brazil,Deaths,144680
+Brazil,Recovered,4299659
+Russia,Confirmed,1188928
+Russia,Deaths,20981
+Russia,Recovered,966724
+Colombia,Confirmed,841532
+Colombia,Deaths,26397
+Colombia,Recovered,753953
+Peru,Confirmed,818297
+Peru,Deaths,32535
+Peru,Recovered,690528
+Spain,Confirmed,789932
+Spain,Deaths,32086
 Spain,Recovered,150376
-South Africa,Confirmed,661936
-South Africa,Deaths,15992
-South Africa,Recovered,591208
-Argentina,Confirmed,640147
-Argentina,Deaths,13482
-Argentina,Recovered,508563
-France,Confirmed,496851
-France,Deaths,31346
-France,Recovered,94289
-Chile,Confirmed,447468
-Chile,Deaths,12298
-Chile,Recovered,421111
-Iran,Confirmed,425481
-Iran,Deaths,24478
-Iran,Recovered,361523
+Argentina,Confirmed,779689
+Argentina,Deaths,20599
+Argentina,Recovered,614515
+Mexico,Confirmed,753090
+Mexico,Deaths,78492
+Mexico,Recovered,633806
+South Africa,Confirmed,677833
+South Africa,Deaths,16909
+South Africa,Recovered,611044
+France,Confirmed,629431
+France,Deaths,32171
+France,Recovered,100253
+United Kingdom,Confirmed,469769
+United Kingdom,Deaths,42358
+United Kingdom,Recovered,2389
+Chile,Confirmed,466590
+Chile,Deaths,12867
+Chile,Recovered,439607
