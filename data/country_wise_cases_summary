@@ -1,40 +1,40 @@
 country_region,case_type,case_num
-US,Confirmed,7605873
-US,Deaths,212762
-US,Recovered,3021252
+US,Confirmed,7663293
+US,Deaths,213752
+US,Recovered,3039089
 India,Confirmed,6906151
 India,Deaths,106490
 India,Recovered,5906069
-Brazil,Confirmed,5028444
-Brazil,Deaths,148957
-Brazil,Recovered,4488092
-Russia,Confirmed,1253603
-Russia,Deaths,21939
-Russia,Recovered,998197
-Colombia,Confirmed,886179
-Colombia,Deaths,27180
-Colombia,Recovered,773973
-Argentina,Confirmed,856369
-Argentina,Deaths,22710
-Argentina,Recovered,684844
-Spain,Confirmed,848324
-Spain,Deaths,32688
+Brazil,Confirmed,5055888
+Brazil,Deaths,149639
+Brazil,Recovered,4502854
+Russia,Confirmed,1265572
+Russia,Deaths,22137
+Russia,Recovered,1005199
+Colombia,Confirmed,894300
+Colombia,Deaths,27495
+Colombia,Recovered,780547
+Argentina,Confirmed,871468
+Argentina,Deaths,23225
+Argentina,Recovered,697141
+Spain,Confirmed,861112
+Spain,Deaths,32929
 Spain,Recovered,150376
-Peru,Confirmed,835662
-Peru,Deaths,33009
+Peru,Confirmed,838614
+Peru,Deaths,33098
 Peru,Recovered,728216
-Mexico,Confirmed,804488
-Mexico,Deaths,83096
-Mexico,Recovered,682604
-France,Confirmed,711704
-France,Deaths,32539
-France,Recovered,102542
-South Africa,Confirmed,686891
-South Africa,Deaths,17408
-South Africa,Recovered,618771
-United Kingdom,Confirmed,564502
-United Kingdom,Deaths,42682
-United Kingdom,Recovered,2474
-Iran,Confirmed,488236
-Iran,Deaths,27888
-Iran,Recovered,399300
+Mexico,Confirmed,810020
+Mexico,Deaths,83497
+Mexico,Recovered,687123
+France,Confirmed,732434
+France,Deaths,32601
+France,Recovered,103232
+South Africa,Confirmed,688352
+South Africa,Deaths,17547
+South Africa,Recovered,620081
+United Kingdom,Confirmed,578390
+United Kingdom,Deaths,42769
+United Kingdom,Recovered,2488
+Iran,Confirmed,492378
+Iran,Deaths,28098
+Iran,Recovered,401379
