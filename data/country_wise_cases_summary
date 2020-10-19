@@ -2,9 +2,9 @@ country_region,case_type,case_num
 US,Confirmed,8154594
 US,Deaths,219674
 US,Recovered,3234138
-India,Confirmed,7494551
-India,Deaths,114031
-India,Recovered,6597209
+India,Confirmed,7550273
+India,Deaths,114610
+India,Recovered,6663608
 Brazil,Confirmed,5224362
 Brazil,Deaths,153675
 Brazil,Recovered,4526393
