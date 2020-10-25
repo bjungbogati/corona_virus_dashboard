@@ -1,40 +1,40 @@
 country_region,case_type,case_num
-US,Confirmed,8491459
-US,Deaths,223975
-US,Recovered,3375427
+US,Confirmed,8575177
+US,Deaths,224889
+US,Recovered,3406656
 India,Confirmed,7814682
 India,Deaths,117956
 India,Recovered,7016046
-Brazil,Confirmed,5353656
-Brazil,Deaths,156471
+Brazil,Confirmed,5380635
+Brazil,Deaths,156903
 Brazil,Recovered,4526393
-Russia,Confirmed,1471000
-Russia,Deaths,25353
-Russia,Recovered,1113736
+Russia,Confirmed,1487260
+Russia,Deaths,25647
+Russia,Recovered,1125155
 France,Confirmed,1084659
 France,Deaths,34536
 France,Recovered,113636
-Argentina,Confirmed,1069368
-Argentina,Deaths,28338
-Argentina,Recovered,866695
+Argentina,Confirmed,1081336
+Argentina,Deaths,28613
+Argentina,Recovered,881113
 Spain,Confirmed,1046132
 Spain,Deaths,34752
 Spain,Recovered,150376
-Colombia,Confirmed,998942
-Colombia,Deaths,29802
-Colombia,Recovered,901652
-Mexico,Confirmed,880775
-Mexico,Deaths,88312
-Mexico,Recovered,740934
-Peru,Confirmed,879876
-Peru,Deaths,33984
-Peru,Recovered,796719
-United Kingdom,Confirmed,834010
-United Kingdom,Deaths,44661
-United Kingdom,Recovered,2657
-South Africa,Confirmed,712412
-South Africa,Deaths,18891
-South Africa,Recovered,643523
-Iran,Confirmed,556891
-Iran,Deaths,31985
-Iran,Recovered,446685
+Colombia,Confirmed,1007711
+Colombia,Deaths,30000
+Colombia,Recovered,907379
+Mexico,Confirmed,886800
+Mexico,Deaths,88743
+Mexico,Recovered,746939
+Peru,Confirmed,883116
+Peru,Deaths,34033
+Peru,Recovered,800480
+United Kingdom,Confirmed,857043
+United Kingdom,Deaths,44835
+United Kingdom,Recovered,2676
+South Africa,Confirmed,714246
+South Africa,Deaths,18944
+South Africa,Recovered,644641
+Iran,Confirmed,562705
+Iran,Deaths,32320
+Iran,Recovered,450891
