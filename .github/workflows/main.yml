@@ -5,7 +5,7 @@ on:
 
   #schedule:
     # auto run after every 12 hours every day
-    #- cron:  '0 */12 * * *'
+    #- cron:  '0 12 * * *'
 
 
 name: covid19_dash
